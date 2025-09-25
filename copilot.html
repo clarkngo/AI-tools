@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Copilot Tutorial</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #212529;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #343a40;
+            margin: 0;
+        }
+        .home-link, .official-site-link {
+            display: inline-block;
+            background-color: #6c757d;
+            color: #ffffff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.2s ease;
+            margin-left: 15px;
+        }
+        .home-link:hover, .official-site-link:hover {
+            background-color: #5a6268;
+        }
+        .official-site-link {
+            background-color: #007bff;
+        }
+        .official-site-link:hover {
+            background-color: #0056b3;
+        }
+        .tutorial-content {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 30px;
+        }
+        h2 {
+            font-size: 1.75rem;
+            color: #007bff;
+            margin-top: 0;
+        }
+        h3 {
+            font-size: 1.4rem;
+            color: #495057;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+        p, li {
+            font-size: 1.1rem;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        code {
+            background-color: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>GitHub Copilot</h1>
+            <div>
+                <a href="https://github.com/features/copilot" target="_blank" class="official-site-link">Official Website</a>
+                <a href="index.html" class="home-link">Back to Directory</a>
+            </div>
+        </div>
+
+        <div class="tutorial-content">
+            <h2>What is GitHub Copilot?</h2>
+            <p>GitHub Copilot is an AI pair programmer that provides autocomplete-style suggestions as you code. It can suggest individual lines or entire functions, and it integrates directly into your code editor (like VS Code, JetBrains, etc.). It's powered by a model trained on billions of lines of open-source code.</p>
+
+            <h3>Common Use Cases</h3>
+            <ul>
+                <li><strong>Speeding Up Development:</strong> Autocomplete boilerplate code, repetitive patterns, and common functions instantly.</li>
+                <li><strong>Learning a New Language:</strong> See idiomatic ways to write code in a language you're unfamiliar with.</li>
+                <li><strong>Writing Tests:</strong> Generate unit tests, integration tests, or end-to-end tests based on your open files and code context.</li>
+                <li><strong>Solving Problems:</strong> Describe a problem in a comment, and Copilot can suggest the code to solve it.</li>
+            </ul>
+
+            <h3>Getting Started: A Step-by-Step Guide</h3>
+            <ol>
+                <li><strong>Get a Subscription:</strong> Copilot requires a subscription through your GitHub account (it's free for verified students and maintainers of popular open-source projects).</li>
+                <li><strong>Install the Extension:</strong> Find and install the GitHub Copilot extension in your preferred code editor (e.g., the VS Code Marketplace).</li>
+                <li><strong>Authorize the Extension:</strong> After installation, you'll be prompted to sign in to GitHub to authorize the extension.</li>
+                <li><strong>Start Coding:</strong> As you start typing code or writing comments, Copilot will automatically provide suggestions in grayed-out text.</li>
+                <li><strong>Accept or Reject:</strong> To accept a suggestion, press the <code>Tab</code> key. To reject it, simply keep typing. You can also cycle through alternative suggestions (often with <code>Alt/Option + ]</code> or <code>[</code>).</li>
+            </ol>
+
+            <h3>Tips for Effective Use</h3>
+            <ul>
+                <li><strong>Write Good Comments:</strong> Copilot uses your comments to generate code. Write a clear, descriptive comment of what you want a function to do, and it will often write the whole function for you.</li>
+                <li><strong>Provide Context:</strong> Copilot works best when it has context. Having related files open in your editor can help it make more relevant suggestions.</li>
+                <li><strong>Use Copilot Chat:</strong> Many versions now include a chat interface where you can ask coding questions, ask it to explain code, or request specific refactors.</li>
+                <li><strong>Always Review Suggestions:</strong> Copilot is a powerful tool, but it's not perfect. Always review the code it generates to ensure it is correct, secure, and fits your project's standards.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

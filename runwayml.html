@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RunwayML Tutorial</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #212529;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #343a40;
+            margin: 0;
+        }
+        .home-link, .official-site-link {
+            display: inline-block;
+            background-color: #6c757d;
+            color: #ffffff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.2s ease;
+            margin-left: 15px;
+        }
+        .home-link:hover, .official-site-link:hover {
+            background-color: #5a6268;
+        }
+        .official-site-link {
+            background-color: #007bff;
+        }
+        .official-site-link:hover {
+            background-color: #0056b3;
+        }
+        .tutorial-content {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 30px;
+        }
+        h2 {
+            font-size: 1.75rem;
+            color: #007bff;
+            margin-top: 0;
+        }
+        h3 {
+            font-size: 1.4rem;
+            color: #495057;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+        p, li {
+            font-size: 1.1rem;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        code {
+            background-color: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>RunwayML</h1>
+            <div>
+                <a href="https://runwayml.com" target="_blank" class="official-site-link">Official Website</a>
+                <a href="index.html" class="home-link">Back to Directory</a>
+            </div>
+        </div>
+
+        <div class="tutorial-content">
+            <h2>What is RunwayML?</h2>
+            <p>RunwayML is a comprehensive online platform for artists and creators that provides a suite of powerful AI "magic tools" focused on video and image manipulation. It started as a tool for artists to use machine learning models and has evolved into a full-featured, web-based content creation suite, most famous for its video generation capabilities.</p>
+
+            <h3>Common Use Cases</h3>
+            <ul>
+                <li><strong>Text-to-Video:</strong> Generate short video clips from a simple text description (e.g., "a drone shot flying through a futuristic city").</li>
+                <li><strong>Video Editing:</strong> Automatically remove backgrounds from videos, paint out unwanted objects, or track the motion of an object in a scene.</li>
+                <li><strong>Image Generation:</strong> Create and expand images using text prompts, similar to other image generators.</li>
+                <li><strong>AI Training:</strong> For advanced users, Runway allows you to train your own custom AI models on your own data.</li>
+            </ul>
+
+            <h3>Getting Started: A Step-by-Step Guide</h3>
+            <ol>
+                <li><strong>Create an Account:</strong> Sign up on the RunwayML website. You will get a certain number of free credits to start experimenting.</li>
+                <li><strong>Explore the AI Magic Tools:</strong> The dashboard presents a wide array of tools. A good one to start with is "Text to Video (Gen-2)."</li>
+                <li><strong>Generate Your First Video:</strong> In the Gen-2 tool, type a prompt describing the video clip you want to create. Be descriptive about the subject, action, and style. Click "Generate."</li>
+                <li><strong>Edit an Existing Video:</strong> Upload one of your own video clips. Try using the "Remove Background" tool to instantly create a green-screen effect, or the "Inpainting" tool to brush over and remove an object from the scene.</li>
+                <li><strong>Export Your Creation:</strong> Once you are happy with the result, you can export the video or image file.</li>
+            </ol>
+
+            <h3>Tips for Effective Use</h3>
+            <ul>
+                <li><strong>Start with a Clear Goal:</strong> Know what you want to achieve. Are you generating a new clip, or editing an existing one? Runway has a specific tool for almost every task.</li>
+                <li><strong>Keep Video Prompts Simple:</strong> Text-to-video is still a new technology. Prompts with a clear subject and a simple action (e.g., "a man walking on a beach") work better than complex scenes with multiple actions.</li>
+                <li><strong>Use Image Prompts for Gen-2:</strong> You can upload a starting image along with your text prompt to have more control over the composition and style of the generated video.</li>
+                <li><strong>Chain Tools Together:</strong> A powerful workflow is to generate a clip with Gen-2, then take that clip into the editor to remove the background, then use the motion tracking tool on the result.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

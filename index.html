@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools Directory</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #212529;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #343a40;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        #tag-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .tag-btn {
+            background-color: #e9ecef;
+            color: #495057;
+            border: 1px solid #dee2e6;
+            border-radius: 15px;
+            padding: 8px 15px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        .tag-btn:hover {
+            background-color: #d1d5db;
+        }
+        .tag-btn.active {
+            background-color: #007bff;
+            color: #ffffff;
+            border-color: #007bff;
+        }
+        .tool-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .tool-card {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: all 0.2s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .tool-card.hidden {
+            transform: scale(0.95);
+            opacity: 0;
+            display: none;
+        }
+        .tool-card:hover {
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+        }
+        .tool-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+        .external-link {
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: #6c757d;
+            transition: color 0.2s ease;
+        }
+        .external-link:hover {
+            color: #007bff;
+        }
+        p {
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        .tutorial-link {
+            display: inline-block;
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            text-align: center;
+            transition: background-color 0.2s ease;
+        }
+        .tutorial-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AI Tools Directory</h1>
+    </header>
+
+    <div class="container">
+        <div id="tag-container">
+            <button class="tag-btn active" data-tag="all">All</button>
+            <button class="tag-btn" data-tag="writing">Writing</button>
+            <button class="tag-btn" data-tag="coding">Coding</button>
+            <button class="tag-btn" data-tag="research">Research</button>
+            <button class="tag-btn" data-tag="images">Images</button>
+            <button class="tag-btn" data-tag="video">Video</button>
+            <button class="tag-btn" data-tag="music">Music</button>
+            <button class="tag-btn" data-tag="design">Design</button>
+            <button class="tag-btn" data-tag="productivity">Productivity</button>
+            <button class="tag-btn" data-tag="education">Education</button>
+            <button class="tag-btn" data-tag="conversation">Conversation</button>
+        </div>
+
+        <div class="tool-grid">
+            <div class="tool-card" data-tags="writing coding conversation">
+                <div class="tool-header"><h2>ChatGPT</h2><a href="https://chatgpt.com" target="_blank" class="external-link" title="Official Website">↗</a></div>
+                <p>Your versatile partner for conversation, content creation, and coding.</p>
+                <a href="chatgpt.html" class="tutorial-link">View Tutorial</a>
+            </div>
+            <div class="tool-card" data-tags="multimodal writing coding conversation">
+                <div class="tool-header"><h2>Gemini</h2><a href="https://gemini.google.com" target="_blank" class="external-link" title="Official Website">↗</a></div>
+                <p>Google's multimodal AI for understanding text, images, code, and video.</p>
+                <a href="gemini.html" class="tutorial-link">View Tutorial</a>
+            </div>
+            <div class="tool-card" data-tags="real-time social-media writing">
+                <div class="tool-header"><h2>Grok</h2><a href="https://grok.x.ai" target="_blank" class="external-link" title="Official Website">↗</a></div>
+                <p>Real-time insights and a bit of wit from the X (formerly Twitter) platform.</p>
+                <a href="grok.html" class="tutorial-link">View Tutorial</a>
+            </div>
+            <div class="tool-card" data-tags="research search writing">
+                <div class="tool-header"><h2>Perplexity AI</h2><a href="https://www.perplexity.ai" target="_blank" class="external-link" title="Official Website">↗</a></div>
+                <p>An AI-powered answer engine that provides sourced, citation-backed results.</p>
+                <a href="perplexity.html" class="tutorial-link">View Tutorial</a>
+            </div>
+            <div class="tool-card" data-tags="research writing notes">
+                <div class="tool-header"><h2>NotebookLM</h2><a href="https://notebooklm.google.com" target="_blank" class="external-link" title="Official Website">↗</a></div>
+                <p>An expert in your own documents for targeted research and analysis.</p>
+                <a href="notebooklm.html" class="tutorial-link">View Tutorial</a>
+            </div>
+            <div class="tool-card" data-tags="presentation design writing">
+                <div class="tool-header"><h2>Gamma</h2><a href="https://gamma.app" target="_blank" class="external-link" title="Official Website">↗</a></div>
+                <p>Create beautiful presentations, documents, and webpages from a simple text prompt.</p>
+                <a href="gamma.html" class="tutorial-link">View Tutorial</a>
+            </div>
+            <div class="tool-card" data-tags="notes ideas writing">
+                <div class="tool-header"><h2>Napkin</h2><a href="https://www.napkin.one" target="_blank" class="external-link" title="Official Website">↗</a></div>
+                <p>Surfaces surprising connections and insights between your notes and ideas.</p>
+                <a href="napkin.html" class="tutorial-link">View Tutorial</a>
+            </div>
+            <div class="tool-card" data-tags="presentation design">
+                <div class="tool-header"><h2>Beautiful.ai</h2><a href="https://www.beautiful.ai" target="_blank" class="external-link" title="Official Website">↗</a></div>
+                <p>An AI presentation designer that makes every slide look polished and professional.</p>
+                <a href="beautiful-ai.html" class="tutorial-link">View Tutorial</a>
+            </div>
+            <div class="tool-card" data-tags="research education">
+                <div class="tool-header"><h2>Explain Paper</h2><a href="https://www.explainpaper.com" target="_blank" class="external-link" title="Official Website">↗</a></div>
+                <p>Simplifies dense academic papers so you can read and understand them faster.</p>
+                <a href="explainpaper.html" class="tutorial-link">View Tutorial</a>
+            </div>
+            <div class="tool-card" data-tags="productivity accessibility">
+                <div class="tool-header"><h2>Goblin Tools</h2><a href="https://goblin.tools" target="_blank" class="external-link" title="Official Website">↗</a></div>
+                <p>A set of simple, single-task tools to help break down tasks and manage projects.</p>
+                <a href="goblin-tools.html" class="tutorial-link">View Tutorial</a>
+            </div>
+            <div class="tool-card" data-tags="design world-building maps">
+                <div class="tool-header"><h2>Mapify</h2><a href="https://mapify.so" target="_blank" class="external-link" title="Official Website">↗</a></div>
+                <p>Generates visual maps from text descriptions for stories, games, and more.</p>
+                <a href="mapify.html" class="tutorial-link">View Tutorial</a>
+            </div>
+            <div class="tool-card" data-tags="design education history">
+                <div class="tool-header"><h2>Histography AI</h2><a href="http://histography.io" target="_blank" class="external-link" title="Official Website">↗</a></div>
+                <p>Creates visual timelines and historical infographics automatically from data.</p>
+                <a href="histography.html" class="tutorial-link">View Tutorial</a>
+            </div>
+            <div class="tool-card" data-tags="education science">
+                <div class="tool-header"><h2>Chemequations</h2><a href="https://www.chemequations.com" target="_blank" class="external-link" title="Official Website">↗</a></div>
+                <p>Instantly balances chemical equations for students and professionals.</p>
+                <a href="chemequations.html" class="tutorial-link">View Tutorial</a>
+            </div>
+            <div class="tool-card" data-tags="coding development productivity">
+                <div class="tool-header"><h2>GitHub Copilot</h2><a href="https://github.com/features/copilot" target="_blank" class="external-link" title="Official Website">↗</a></div>
+                <p>An AI pair programmer that suggests code and entire functions in real-time from your editor.</p>
+                <a href="copilot.html" class="tutorial-link">View Tutorial</a>
+            </div>
+            <div class="tool-card" data-tags="images design art">
+                <div class="tool-header"><h2>Midjourney</h2><a href="https://www.midjourney.com" target="_blank" class="external-link" title="Official Website">↗</a></div>
+                <p>An AI image generator that creates highly artistic and detailed images from text prompts.</p>
+                <a href="midjourney.html" class="tutorial-link">View Tutorial</a>
+            </div>
+            <div class="tool-card" data-tags="writing conversation research">
+                <div class="tool-header"><h2>Claude</h2><a href="https://claude.ai" target="_blank" class="external-link" title="Official Website">↗</a></div>
+                <p>A conversational AI focused on helpful, harmless, and honest interactions.</p>
+                <a href="claude.html" class="tutorial-link">View Tutorial</a>
+            </div>
+            <div class="tool-card" data-tags="music audio creative">
+                <div class="tool-header"><h2>Suno</h2><a href="https://suno.com" target="_blank" class="external-link" title="Official Website">↗</a></div>
+                <p>An AI music generator that creates original songs, complete with vocals and instruments.</p>
+                <a href="suno.html" class="tutorial-link">View Tutorial</a>
+            </div>
+            <div class="tool-card" data-tags="video creative design">
+                <div class="tool-header"><h2>RunwayML</h2><a href="https://runwayml.com" target="_blank" class="external-link" title="Official Website">↗</a></div>
+                <p>A suite of AI magic tools for video, including text-to-video generation and background removal.</p>
+                <a href="runwayml.html" class="tutorial-link">View Tutorial</a>
+            </div>
+            <div class="tool-card" data-tags="transcription productivity meetings">
+                <div class="tool-header"><h2>Otter.ai</h2><a href="https://otter.ai" target="_blank" class="external-link" title="Official Website">↗</a></div>
+                <p>An AI meeting assistant that records, transcribes, and summarizes your conversations.</p>
+                <a href="otter.html" class="tutorial-link">View Tutorial</a>
+            </div>
+            <div class="tool-card" data-tags="research search science">
+                <div class="tool-header"><h2>Consensus</h2><a href="https://consensus.app" target="_blank" class="external-link" title="Official Website">↗</a></div>
+                <p>An AI search engine for science that extracts findings directly from published research.</p>
+                <a href="consensus.html" class="tutorial-link">View Tutorial</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tagContainer = document.getElementById('tag-container');
+            const toolCards = document.querySelectorAll('.tool-card');
+
+            tagContainer.addEventListener('click', (event) => {
+                if (event.target.classList.contains('tag-btn')) {
+                    const selectedTag = event.target.getAttribute('data-tag');
+
+                    // Update active button
+                    tagContainer.querySelector('.active').classList.remove('active');
+                    event.target.classList.add('active');
+
+                    // Filter cards
+                    toolCards.forEach(card => {
+                        const cardTags = card.getAttribute('data-tags');
+                        if (selectedTag === 'all' || cardTags.includes(selectedTag)) {
+                            card.classList.remove('hidden');
+                        } else {
+                            card.classList.add('hidden');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
