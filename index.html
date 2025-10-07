@@ -25,6 +25,17 @@
             max-width: 1200px;
             margin: 0 auto;
         }
+        #search-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #search-bar {
+            width: 50%;
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
         #tag-container {
             text-align: center;
             margin-bottom: 30px;
@@ -119,6 +130,9 @@
     </header>
 
     <div class="container">
+        <div id="search-container">
+            <input type="text" id="search-bar" placeholder="Search for tools by name or description...">
+        </div>
         <div id="tag-container">
             <button class="tag-btn active" data-tag="all">All</button>
             <button class="tag-btn" data-tag="writing">Writing</button>
@@ -131,6 +145,10 @@
             <button class="tag-btn" data-tag="productivity">Productivity</button>
             <button class="tag-btn" data-tag="education">Education</button>
             <button class="tag-btn" data-tag="conversation">Conversation</button>
+            <button class="tag-btn" data-tag="game-dev">Game Dev</button>
+            <button class="tag-btn" data-tag="art">Art</button>
+            <button class="tag-btn" data-tag="openai">OpenAI</button>
+            <button class="tag-btn" data-tag="google">Google</button>
         </div>
 
         <div class="tool-grid">
@@ -234,6 +252,31 @@
                 <p>An AI search engine for science that extracts findings directly from published research.</p>
                 <a href="consensus.html" class="tutorial-link">View Tutorial</a>
             </div>
+            <div class="tool-card" data-tags="images art openai">
+                <div class="tool-header"><h2>DALL-E</h2><a href="https://openai.com/dall-e-3" target="_blank" class="external-link" title="Official Website">↗</a></div>
+                <p>Generate images from text descriptions using OpenAI's powerful model.</p>
+                <a href="dall-e.html" class="tutorial-link">View Tutorial</a>
+            </div>
+            <div class="tool-card" data-tags="images art google">
+                <div class="tool-header"><h2>Imagen</h2><a href="https://cloud.google.com/vertex-ai/docs/generative-ai/image/overview" target="_blank" class="external-link" title="Official Website">↗</a></div>
+                <p>Google's text-to-image diffusion model for photorealistic image generation.</p>
+                <a href="imagen.html" class="tutorial-link">View Tutorial</a>
+            </div>
+            <div class="tool-card" data-tags="images art design">
+                <div class="tool-header"><h2>Leonardo AI</h2><a href="https://leonardo.ai/" target="_blank" class="external-link" title="Official Website">↗</a></div>
+                <p>A platform for generating high-quality art and assets for creative projects.</p>
+                <a href="leonardo-ai.html" class="tutorial-link">View Tutorial</a>
+            </div>
+            <div class="tool-card" data-tags="game-dev research design">
+                <div class="tool-header"><h2>Ludo.ai</h2><a href="https://ludo.ai/" target="_blank" class="external-link" title="Official Website">↗</a></div>
+                <p>AI-powered platform for game ideation, research, and concept development.</p>
+                <a href="ludo-ai.html" class="tutorial-link">View Tutorial</a>
+            </div>
+            <div class="tool-card" data-tags="images design game-dev">
+                <div class="tool-header"><h2>Scenario</h2><a href="https://www.scenario.com/" target="_blank" class="external-link" title="Official Website">↗</a></div>
+                <p>Generate consistent, high-quality game assets with AI.</p>
+                <a href="scenario.html" class="tutorial-link">View Tutorial</a>
+            </div>
         </div>
     </div>
 
@@ -241,24 +284,40 @@
         document.addEventListener('DOMContentLoaded', () => {
             const tagContainer = document.getElementById('tag-container');
             const toolCards = document.querySelectorAll('.tool-card');
+            const searchBar = document.getElementById('search-bar');
+
+            function filterCards() {
+                const searchQuery = searchBar.value.toLowerCase();
+                const activeTagBtn = tagContainer.querySelector('.active');
+                // if the active tag button is not found, default to 'all'
+                const selectedTag = activeTagBtn ? activeTagBtn.getAttribute('data-tag') : 'all';
+
+                toolCards.forEach(card => {
+                    const title = card.querySelector('h2').textContent.toLowerCase();
+                    const description = card.querySelector('p').textContent.toLowerCase();
+                    const cardTags = card.getAttribute('data-tags');
+
+                    const searchMatch = title.includes(searchQuery) || description.includes(searchQuery);
+                    const tagMatch = selectedTag === 'all' || cardTags.includes(selectedTag);
+
+                    if (searchMatch && tagMatch) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            }
+
+            searchBar.addEventListener('input', filterCards);
 
             tagContainer.addEventListener('click', (event) => {
                 if (event.target.classList.contains('tag-btn')) {
-                    const selectedTag = event.target.getAttribute('data-tag');
-
-                    // Update active button
-                    tagContainer.querySelector('.active').classList.remove('active');
+                    const activeTagBtn = tagContainer.querySelector('.active');
+                    if (activeTagBtn) {
+                        activeTagBtn.classList.remove('active');
+                    }
                     event.target.classList.add('active');
-
-                    // Filter cards
-                    toolCards.forEach(card => {
-                        const cardTags = card.getAttribute('data-tags');
-                        if (selectedTag === 'all' || cardTags.includes(selectedTag)) {
-                            card.classList.remove('hidden');
-                        } else {
-                            card.classList.add('hidden');
-                        }
-                    });
+                    filterCards();
                 }
             });
         });
