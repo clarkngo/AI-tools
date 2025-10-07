@@ -149,7 +149,6 @@
             <button class="tag-btn" data-tag="art">Art</button>
             <button class="tag-btn" data-tag="openai">OpenAI</button>
             <button class="tag-btn" data-tag="google">Google</button>
-            <button class="tag-btn" data-tag="code-editor">Code Editor</button>
         </div>
 
         <div class="tool-grid">
@@ -314,18 +313,6 @@
             tagContainer.addEventListener('click', (event) => {
                 if (event.target.classList.contains('tag-btn')) {
                     const activeTagBtn = tagContainer.querySelector('.active');
-                    if (activeTagBtn) {
-                        activeTagBtn.classList.remove('active');
-                    }
-                    event.target.classList.add('active');
-                    filterCards();
-                }
-            });
-        });
-    </script>
-
-</body>
-</html> const activeTagBtn = tagContainer.querySelector('.active');
                     if (activeTagBtn) {
                         activeTagBtn.classList.remove('active');
                     }
