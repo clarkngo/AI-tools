@@ -4,6 +4,7 @@ import ToolGrid from './ToolGrid';
 import TagBar from './TagBar';
 import SearchBar from './SearchBar';
 import Modal from './Modal';
+import logoImage from '/ai-tools.png';
 
 const MainPage = () => {
     const [searchQuery, setSearchQuery] = useState('');
@@ -50,7 +51,7 @@ const MainPage = () => {
     return (
         <div className="App">
             <header>
-                <img src="/ai-tools.png" alt="AI Tools Logo" className="logo" />
+                <img src={logoImage} alt="AI Tools Logo" className="logo" />
                 <h1>AI Tools Directory</h1>
                 <p className="tagline">Unleash Your Potential with Curated AI Tools</p>
                 <div className="stats">
