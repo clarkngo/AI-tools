@@ -11,6 +11,10 @@ When a user requests to add a new AI tool to the directory, I will perform the f
 3.  **Update `src/data.js`:** I will add a new entry for the tool to the `tools` array in `src/data.js`, including the information gathered in the previous steps.
 4.  **Update `README.md`:** I will add the new tool to the list of AI tools in the `README.md` file.
 
+## Important Notes
+
+*   **Ignore the `reference/` folder:** This folder contains reference materials for legacy HTML pages. Do not search, read, or update files in this folder. Focus only on the React components in `src/` and the tutorial modules in `src/tutorials/`.
+
 ## Committing Changes
 
 When committing changes, please include a summary of the changes in the `CHANGELOG.md` file.
