@@ -8,13 +8,45 @@ body {
 }
 
 header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     margin-bottom: 20px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    vertical-align: middle;
 }
 
 h1 {
     font-size: 2.5rem;
     color: #ffffff;
+    font-family: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    color: #b0b0b0;
+    margin: 10px 0 15px 0;
+    font-weight: 400;
+}
+
+.stats {
+    margin-top: 5px;
+}
+
+.stats p {
+    font-size: 0.95rem;
+    color: #888888;
+    margin: 5px 0;
 }
 
 .container {
@@ -60,9 +92,9 @@ h1 {
 }
 
 .tag-btn.active {
-    background-color: #007bff;
-    color: #ffffff;
-    border-color: #007bff;
+    background-color: #00d4ff;
+    color: #000000;
+    border-color: #00d4ff;
 }
 
 .tool-grid {
@@ -89,7 +121,7 @@ h1 {
 
 .tool-card:hover {
     transform: translateY(-5px);
-    border-color: #007bff;
+    border-color: #00d4ff;
 }
 
 .card-content {
@@ -108,7 +140,7 @@ h2 {
     font-size: 1.5rem;
     margin-top: 0;
     margin-bottom: 10px;
-    color: #007bff;
+    color: #00d4ff;
 }
 
 .external-link {
@@ -125,7 +157,7 @@ h2 {
 }
 
 .external-link:hover svg {
-    stroke: #007bff;
+    stroke: #00d4ff;
 }
 
 p {

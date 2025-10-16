@@ -50,7 +50,9 @@ const MainPage = () => {
     return (
         <div className="App">
             <header>
+                <img src="/ai-tools.png" alt="AI Tools Logo" className="logo" />
                 <h1>AI Tools Directory</h1>
+                <p className="tagline">Unleash Your Potential with Curated AI Tools</p>
                 <div className="stats">
                     <p>Total Tools: {totalTools}</p>
                 </div>

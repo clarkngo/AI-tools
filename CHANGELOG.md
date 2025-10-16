@@ -2,6 +2,20 @@
 
 ## 2025-10-16
 
+### Changed
+
+*   Updated header layout in `MainPage.jsx` to include tagline "Unleash Your Potential with Curated AI Tools"
+*   Improved typography for "AI Tools Directory" title with modern font stack, increased font weight, and tighter letter spacing
+*   Updated color scheme from Bootstrap blue (#007bff) to electric cyan (#00d4ff) for better contrast and modern tech aesthetic
+*   Changed active tag button text color to black for improved readability against bright cyan background
+*   Reorganized header layout in `App.css` to use vertical flexbox layout for better visual hierarchy
+
+### Fixed
+
+*   Fixed Total Tools display line in stats section
+
+## 2025-10-16
+
 ### Added
 
 *   `FUTURE-IDEAS.md` to track future ideas and features.
