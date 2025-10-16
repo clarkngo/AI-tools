@@ -4,7 +4,11 @@ body {
     background-color: #1a1a1a;
     color: #ffffff;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
 }
 
 header {
@@ -49,9 +53,11 @@ h1 {
     margin: 5px 0;
 }
 
-.container {
+.App {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
+    padding: 2rem;
 }
 
 #search-container {
@@ -72,6 +78,10 @@ h1 {
 #tag-container {
     text-align: center;
     margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
 }
 
 .tag-btn {
@@ -80,7 +90,7 @@ h1 {
     border: 1px solid #5a5a5a;
     border-radius: 15px;
     padding: 8px 15px;
-    margin: 5px;
+    margin: 0;
     cursor: pointer;
     font-size: 0.9rem;
     font-weight: 500;
@@ -246,4 +256,62 @@ p {
     border-radius: 4px;
     font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     color: #e0e0e0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #tag-container {
+        max-height: 120px;
+        overflow: hidden;
+        position: relative;
+        transition: max-height 0.3s ease;
+    }
+
+    #tag-container.expanded {
+        max-height: none;
+    }
+
+    .tag-btn {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    #search-bar {
+        width: 80%;
+    }
+
+    .tool-grid {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .App {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #tag-container {
+        max-height: 80px;
+    }
+
+    .tag-btn {
+        font-size: 0.75rem;
+        padding: 5px 10px;
+    }
+
+    #search-bar {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .tagline {
+        font-size: 0.95rem;
+    }
 }

@@ -59,11 +59,9 @@ const MainPage = () => {
                 </div>
             </header>
 
-            <div className="container">
-                <SearchBar searchQuery={searchQuery} onSearch={setSearchQuery} />
-                <TagBar tags={tags} selectedTag={selectedTag} onSelectTag={setSelectedTag} tagCounts={tagCounts} />
-                <ToolGrid tools={filteredTools} onCardClick={openModal} />
-            </div>
+            <SearchBar searchQuery={searchQuery} onSearch={setSearchQuery} />
+            <TagBar tags={tags} selectedTag={selectedTag} onSelectTag={setSelectedTag} tagCounts={tagCounts} />
+            <ToolGrid tools={filteredTools} onCardClick={openModal} />
             <Modal tool={selectedTool} onClose={closeModal} />
         </div>
     );

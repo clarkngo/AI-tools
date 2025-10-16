@@ -9,10 +9,22 @@
 *   Updated color scheme from Bootstrap blue (#007bff) to electric cyan (#00d4ff) for better contrast and modern tech aesthetic
 *   Changed active tag button text color to black for improved readability against bright cyan background
 *   Reorganized header layout in `App.css` to use vertical flexbox layout for better visual hierarchy
+*   Improved website centering using flexbox on body element
+*   Enhanced tag container with flexbox and gap for better spacing
+*   Added responsive design for mobile devices with collapsible tag section
+
+### Added
+
+*   Logo image (`ai-tools.png`) now properly imported and displayed in header
+*   "Show More/Less" toggle button for tags on small screens (≤768px)
+*   Media queries for tablet (≤768px) and mobile (≤480px) breakpoints
+*   Automatic tag collapse on small screens with expandable functionality
 
 ### Fixed
 
 *   Fixed Total Tools display line in stats section
+*   Fixed logo image path for GitHub Pages deployment by using ES module import
+*   Fixed website alignment issue - content now properly centered instead of left-aligned
 
 ## 2025-10-16
 
