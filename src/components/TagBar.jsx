@@ -16,7 +16,7 @@ const TagBar = ({ tags, selectedTag, onSelectTag, tagCounts }) => {
     }, []);
 
     return (
-        <div style={{ position: 'relative' }}>
+        <div>
             <div id="tag-container" className={isExpanded ? 'expanded' : ''}>
                 {tags.map(tag => (
                     <button
@@ -31,23 +31,10 @@ const TagBar = ({ tags, selectedTag, onSelectTag, tagCounts }) => {
             </div>
             {showToggle && (
                 <button
+                    className="toggle-tags-btn"
                     onClick={() => setIsExpanded(!isExpanded)}
-                    style={{
-                        display: 'block',
-                        margin: '10px auto 0',
-                        backgroundColor: '#3a3a3a',
-                        color: '#ffffff',
-                        border: '1px solid #5a5a5a',
-                        borderRadius: '5px',
-                        padding: '8px 16px',
-                        cursor: 'pointer',
-                        fontSize: '0.85rem',
-                        transition: 'background-color 0.2s ease',
-                    }}
-                    onMouseEnter={(e) => e.target.style.backgroundColor = '#4a4a4a'}
-                    onMouseLeave={(e) => e.target.style.backgroundColor = '#3a3a3a'}
                 >
-                    {isExpanded ? 'Show Less ▲' : 'Show More ▼'}
+                    {isExpanded ? '▲ Show Less Tags' : '▼ Show More Tags'}
                 </button>
             )}
         </div>

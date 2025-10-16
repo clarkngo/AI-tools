@@ -19,6 +19,9 @@
 *   "Show More/Less" toggle button for tags on small screens (≤768px)
 *   Media queries for tablet (≤768px) and mobile (≤480px) breakpoints
 *   Automatic tag collapse on small screens with expandable functionality
+*   Fade-out gradient effect on collapsed tags to indicate more content
+*   Smooth transition animations for expanding/collapsing tags
+*   Active state feedback for mobile toggle button
 
 ### Fixed
 
