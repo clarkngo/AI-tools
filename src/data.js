@@ -51,6 +51,7 @@ export const tools = [
         "name": "ChatGPT",
         "url": "https://chatgpt.com",
         "description": "Your versatile partner for conversation, content creation, and coding.",
+        "emoji": "💬",
         "tutorial": chatgpt
     },
     {
@@ -58,6 +59,7 @@ export const tools = [
         "name": "Gemini",
         "url": "https://gemini.google.com",
         "description": "Google's multimodal AI for understanding text, images, code, and video.",
+        "emoji": "🤖",
         "tutorial": gemini
     },
     {
@@ -65,6 +67,7 @@ export const tools = [
         "name": "Grok",
         "url": "https://grok.x.ai",
         "description": "Real-time insights and a bit of wit from the X (formerly Twitter) platform.",
+        "emoji": "🧠",
         "tutorial": grok
     },
     {
@@ -72,6 +75,7 @@ export const tools = [
         "name": "Perplexity AI",
         "url": "https://www.perplexity.ai",
         "description": "An AI-powered answer engine that provides sourced, citation-backed results.",
+        "emoji": "🔎",
         "tutorial": perplexityAi
     },
     {
@@ -79,6 +83,7 @@ export const tools = [
         "name": "NotebookLM",
         "url": "https://notebooklm.google.com",
         "description": "An expert in your own documents for targeted research and analysis.",
+        "emoji": "📚",
         "tutorial": notebooklm
     },
     {
@@ -86,6 +91,7 @@ export const tools = [
         "name": "Gamma",
         "url": "https://gamma.app",
         "description": "Create beautiful presentations, documents, and webpages from a simple text prompt.",
+        "emoji": "📊",
         "tutorial": gamma
     },
     {
@@ -93,6 +99,7 @@ export const tools = [
         "name": "Napkin",
         "url": "https://www.napkin.one",
         "description": "Surfaces surprising connections and insights between your notes and ideas.",
+        "emoji": "💡",
         "tutorial": napkin
     },
     {
@@ -100,6 +107,7 @@ export const tools = [
         "name": "Beautiful.ai",
         "url": "https://www.beautiful.ai",
         "description": "An AI presentation designer that makes every slide look polished and professional.",
+        "emoji": "🎨",
         "tutorial": beautifulAi
     },
     {
@@ -107,6 +115,7 @@ export const tools = [
         "name": "Explain Paper",
         "url": "https://www.explainpaper.com",
         "description": "Simplifies dense academic papers so you can read and understand them faster.",
+        "emoji": "📖",
         "tutorial": explainPaper
     },
     {
@@ -114,6 +123,7 @@ export const tools = [
         "name": "Goblin Tools",
         "url": "https://goblin.tools",
         "description": "A set of simple, single-task tools to help break down tasks and manage projects.",
+        "emoji": "🧰",
         "tutorial": goblinTools
     },
     {
@@ -121,6 +131,7 @@ export const tools = [
         "name": "Mapify",
         "url": "https://mapify.so",
         "description": "Generates visual maps from text descriptions for stories, games, and more.",
+        "emoji": "🗺️",
         "tutorial": mapify
     },
     {
@@ -128,6 +139,7 @@ export const tools = [
         "name": "Histography AI",
         "url": "http://histography.io",
         "description": "Creates visual timelines and historical infographics automatically from data.",
+        "emoji": "🕰️",
         "tutorial": histographyAi
     },
     {
@@ -135,6 +147,7 @@ export const tools = [
         "name": "Chemequations",
         "url": "https://www.chemequations.com",
         "description": "Instantly balances chemical equations for students and professionals.",
+        "emoji": "⚗️",
         "tutorial": chemequations
     },
     {
@@ -142,6 +155,7 @@ export const tools = [
         "name": "Gauth",
         "url": "https://www.gauthmath.com/",
         "description": "An AI-powered math problem solver that provides step-by-step solutions to math problems.",
+        "emoji": "🧮",
         "tutorial": gauth
     },
     {
@@ -149,6 +163,7 @@ export const tools = [
         "name": "Teachable Machine",
         "url": "https://teachablemachine.withgoogle.com/",
         "description": "A web-based tool to create machine learning models without code.",
+        "emoji": "🧪",
         "tutorial": teachableMachine
     },
     {
@@ -156,6 +171,7 @@ export const tools = [
         "name": "GitHub Copilot",
         "url": "https://github.com/features/copilot",
         "description": "An AI pair programmer that suggests code and entire functions in real-time from your editor.",
+        "emoji": "👨‍💻",
         "tutorial": githubCopilot
     },
     {
@@ -163,6 +179,7 @@ export const tools = [
         "name": "Cursor",
         "url": "https://cursor.sh/",
         "description": "An AI-powered code editor designed for pair-programming with a powerful AI.",
+        "emoji": "💻",
         "tutorial": cursor
     },
     {
@@ -170,6 +187,7 @@ export const tools = [
         "name": "Windsurf",
         "url": "https://windsurf.com/",
         "description": "An AI coding assistant designed to help developers write, understand, and fix code more efficiently.",
+        "emoji": "⚙️",
         "tutorial": windsurf
     },
     {
@@ -177,6 +195,7 @@ export const tools = [
         "name": "Midjourney",
         "url": "https://www.midjourney.com",
         "description": "An AI image generator that creates highly artistic and detailed images from text prompts.",
+        "emoji": "🖼️",
         "tutorial": midjourney
     },
     {
@@ -184,6 +203,7 @@ export const tools = [
         "name": "Claude",
         "url": "https://claude.ai",
         "description": "A conversational AI focused on helpful, harmless, and honest interactions.",
+        "emoji": "🗨️",
         "tutorial": claude
     },
     {
@@ -191,6 +211,7 @@ export const tools = [
         "name": "Suno",
         "url": "https://suno.com",
         "description": "An AI music generator that creates original songs, complete with vocals and instruments.",
+        "emoji": "🎵",
         "tutorial": suno
     },
     {
@@ -198,6 +219,7 @@ export const tools = [
         "name": "RunwayML",
         "url": "https://runwayml.com",
         "description": "A suite of AI magic tools for video, including text-to-video generation and background removal.",
+        "emoji": "🎬",
         "tutorial": runwayml
     },
     {
@@ -205,6 +227,7 @@ export const tools = [
         "name": "Topaz Labs",
         "url": "https://www.topazlabs.com/",
         "description": "AI-powered software that enhances photos and videos.",
+        "emoji": "🛠️",
         "tutorial": topazLabs
     },
     {
@@ -212,6 +235,7 @@ export const tools = [
         "name": "Otter.ai",
         "url": "https://otter.ai",
         "description": "An AI meeting assistant that records, transcribes, and summarizes your conversations.",
+        "emoji": "📝",
         "tutorial": otterAi
     },
     {
@@ -219,6 +243,7 @@ export const tools = [
         "name": "Consensus",
         "url": "https://consensus.app",
         "description": "An AI search engine for science that extracts findings directly from published research.",
+        "emoji": "🔬",
         "tutorial": consensus
     },
     {
@@ -226,6 +251,7 @@ export const tools = [
         "name": "DALL-E",
         "url": "https://openai.com/dall-e-3",
         "description": "Generate images from text descriptions using OpenAI's powerful model.",
+        "emoji": "🖼️",
         "tutorial": dalle
     },
     {
@@ -233,6 +259,7 @@ export const tools = [
         "name": "Imagen",
         "url": "https://cloud.google.com/vertex-ai/docs/generative-ai/image/overview",
         "description": "Google's text-to-image diffusion model for photorealistic image generation.",
+        "emoji": "🖼️",
         "tutorial": imagen
     },
     {
@@ -240,6 +267,7 @@ export const tools = [
         "name": "Leonardo AI",
         "url": "https://leonardo.ai/",
         "description": "A platform for generating high-quality art and assets for creative projects.",
+        "emoji": "🖌️",
         "tutorial": leonardoAi
     },
     {
@@ -247,6 +275,7 @@ export const tools = [
         "name": "Ludo.ai",
         "url": "https://ludo.ai/",
         "description": "AI-powered platform for game ideation, research, and concept development.",
+        "emoji": "🎮",
         "tutorial": ludoAi
     },
     {
@@ -254,6 +283,7 @@ export const tools = [
         "name": "Scenario",
         "url": "https://www.scenario.com/",
         "description": "Generate consistent, high-quality game assets with AI.",
+        "emoji": "🎮",
         "tutorial": scenario
     },
     {
@@ -261,6 +291,7 @@ export const tools = [
         "name": "myai101",
         "url": "https://myai101.com/",
         "description": "Interactive, bite-sized AI learning lessons",
+        "emoji": "🎓",
         "tutorial": myai101
     },
     {
@@ -268,6 +299,7 @@ export const tools = [
         "name": "Recall",
         "url": "https://getrecall.ai/",
         "description": "Upload notes, PDFs, slides, etc., chat with your content",
+        "emoji": "🧠",
         "tutorial": recall
     },
     {
@@ -275,6 +307,7 @@ export const tools = [
         "name": "Anki",
         "url": "https://apps.ankiweb.net/",
         "description": "Flashcard and spaced repetition platform",
+        "emoji": "🧠",
         "tutorial": anki
     },
     {
@@ -282,6 +315,7 @@ export const tools = [
         "name": "FlashTutor",
         "url": "#",
         "description": "AI-powered study buddy for quizzes/flashcards",
+        "emoji": "✏️",
         "tutorial": flashtutor
     },
     {
@@ -289,6 +323,7 @@ export const tools = [
         "name": "Gradiance",
         "url": "https://gradiance.ai/",
         "description": "AI grading tool for teachers",
+        "emoji": "🧑‍🏫",
         "tutorial": gradiance
     },
     {
@@ -296,6 +331,7 @@ export const tools = [
         "name": "GPT Scrambler",
         "url": "https://gptscrambler.com/en",
         "description": "Refines and humanizes AI-generated drafts",
+        "emoji": "🔀",
         "tutorial": gptScrambler
     },
     {
@@ -303,6 +339,7 @@ export const tools = [
         "name": "TaskRatchet",
         "url": "https://www.taskratchet.com/",
         "description": "AI-powered project/task manager",
+        "emoji": "✅",
         "tutorial": taskratchet
     },
     {
@@ -310,6 +347,7 @@ export const tools = [
         "name": "Quillbot",
         "url": "https://quillbot.com/",
         "description": "Advanced paraphrasing and writing tool",
+        "emoji": "✍️",
         "tutorial": quillbot
     },
     {
@@ -317,6 +355,7 @@ export const tools = [
         "name": "Synthesia",
         "url": "https://www.synthesia.io/",
         "description": "AI-generated explainer videos",
+        "emoji": "🎥",
         "tutorial": synthesia
     },
     {
@@ -324,6 +363,7 @@ export const tools = [
         "name": "MagicSchoolAI",
         "url": "https://www.magicschool.ai/",
         "description": "Instantly generate MCQs, lesson plans, slides",
+        "emoji": "🏫",
         "tutorial": magicschoolai
     },
     {
@@ -331,6 +371,7 @@ export const tools = [
         "name": "SAS Writing Reviser",
         "url": "https://appsource.microsoft.com/pt-br/product/saas/wa104381774?tab=overview",
         "description": "AI suggestions to improve writing",
+        "emoji": "📝",
         "tutorial": sasWritingReviser
     },
     {
@@ -338,6 +379,7 @@ export const tools = [
         "name": "Scribbr",
         "url": "https://www.scribbr.com/",
         "description": "AI-powered proofreading/editing",
+        "emoji": "📝",
         "tutorial": scribbr
     },
     {
@@ -345,6 +387,7 @@ export const tools = [
         "name": "Socrative",
         "url": "https://www.socrative.com/",
         "description": "Personalized learning/question platform",
+        "emoji": "🧑‍🏫",
         "tutorial": socrative
     },
     {
@@ -352,6 +395,7 @@ export const tools = [
         "name": "Edpuzzle",
         "url": "https://edpuzzle.com/",
         "description": "Video learning with assessment tools",
+        "emoji": "▶️",
         "tutorial": edpuzzle
     },
     {
@@ -359,6 +403,7 @@ export const tools = [
         "name": "Nearpod",
         "url": "https://www.nearpod.com/",
         "description": "Real-time classroom interaction/assessment",
+        "emoji": "📡",
         "tutorial": nearpod
     }
     ,

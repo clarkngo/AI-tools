@@ -1,5 +1,19 @@
 # Changelog
 
+## 2025-10-24
+
+### Added
+
+*   Added `Wispr Flow` (https://wisprflow.ai/) to the tools list.
+
+### Changed
+
+*   Added explicit `emoji` fields for all tools and updated UI to display an emoji on each tool card for quicker visual scanning.
+
+### Notes
+
+*   Emoji selection is conservative and tag-driven; we can fine-tune specific emojis per tool on request.
+
 ## 2025-10-16
 
 ### Changed
