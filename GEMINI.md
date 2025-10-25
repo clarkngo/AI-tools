@@ -10,6 +10,7 @@ When a user requests to add a new AI tool to the directory, I will perform the f
     *   `tips`: A list of tips for using the tool effectively.
 3.  **Update `src/data.js`:** I will add a new entry for the tool to the `tools` array in `src/data.js`, including the information gathered in the previous steps.
 4.  **Update `README.md`:** I will add the new tool to the list of AI tools in the `README.md` file.
+5.  **Create Tutorial Module & Emoji:** I will create a tutorial module in `src/tutorials/` exporting the structured tutorial content (`whatIs`, `useCases`, `gettingStarted`, `tips`), add an explicit `emoji` field to the corresponding `src/data.js` entry, and ensure the `ToolCard` displays the emoji on the site.
 
 ## Important Notes
 
@@ -21,7 +22,7 @@ When committing changes, please include a summary of the changes in the `CHANGEL
 
 ## AI Tool Stats
 
-**Total Tools:** 42
+**Total Tools:** 43
 
 **Tools by Tag:**
 *   writing: 15
@@ -37,7 +38,7 @@ When committing changes, please include a summary of the changes in the `CHANGEL
 *   design: 8
 *   ideas: 1
 *   education: 12
-*   productivity: 14
+*   productivity: 15
 *   accessibility: 1
 *   world-building: 1
 *   maps: 1
@@ -52,8 +53,9 @@ When committing changes, please include a summary of the changes in the `CHANGEL
 *   video: 4
 *   creative: 2
 *   meetings: 1
-*   transcription: 1
+*   transcription: 2
 *   openai: 1
 *   game-dev: 3
-*   audio: 1
+*   audio: 2
+*   voice-to-text: 1
 *   search: 1

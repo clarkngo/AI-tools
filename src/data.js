@@ -38,6 +38,7 @@ import gptScrambler from './tutorials/gpt-scrambler.js';
 import taskratchet from './tutorials/taskratchet.js';
 import quillbot from './tutorials/quillbot.js';
 import synthesia from './tutorials/synthesia.js';
+import wisprflow from './tutorials/wisprflow.js';
 import magicschoolai from './tutorials/magicschoolai.js';
 import sasWritingReviser from './tutorials/sas-writing-reviser.js';
 import scribbr from './tutorials/scribbr.js';
@@ -411,7 +412,9 @@ export const tools = [
         "tags": "productivity automation workflow",
         "name": "Wispr Flow",
         "url": "https://wisprflow.ai/",
-        "description": "Visual automation platform that connects AI to apps and automates workflows.",
-        "emoji": "🔁"
+        "description": "Wispr Flow is a voice-to-text AI that provides real-time transcription, meeting integration, and easy export of transcripts and summaries.",
+        "tags": "transcription audio productivity voice-to-text",
+        "emoji": "🎙️",
+        "tutorial": wisprflow
     }
 ]
