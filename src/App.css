@@ -146,6 +146,16 @@ h1 {
     align-items: flex-start;
 }
 
+.tool-emoji {
+    font-size: 1.6rem;
+    line-height: 1;
+    display: inline-block;
+}
+
+.tool-header .tool-emoji + h2 {
+    margin: 0;
+}
+
 h2 {
     font-size: 1.5rem;
     margin-top: 0;

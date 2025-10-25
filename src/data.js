@@ -361,4 +361,12 @@ export const tools = [
         "description": "Real-time classroom interaction/assessment",
         "tutorial": nearpod
     }
+    ,
+    {
+        "tags": "productivity automation workflow",
+        "name": "Wispr Flow",
+        "url": "https://wisprflow.ai/",
+        "description": "Visual automation platform that connects AI to apps and automates workflows.",
+        "emoji": "🔁"
+    }
 ]
