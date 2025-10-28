@@ -190,6 +190,42 @@ p {
     padding-top: 10px;
 }
 
+.audience {
+    display: inline-block;
+    background-color: #2a6f6f;
+    color: #ffffff;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+.audience-btn {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    border: 1px solid #5a5a5a;
+    border-radius: 15px;
+    padding: 8px 12px;
+    margin: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.audience-btn.active {
+    background-color: #00d4ff;
+    color: #000000;
+    border-color: #00d4ff;
+}
+
+#audience-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 18px;
+}
+
 .tag {
     display: inline-block;
     background-color: #3a3a3a;

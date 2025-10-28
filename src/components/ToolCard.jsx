@@ -40,6 +40,13 @@ const ToolCard = ({ tool, onCardClick }) => {
                     {tool.tags.split(' ').map(tag => (
                         <span key={tag} className="tag">{tag}</span>
                     ))}
+                    {tool.audience && (
+                        <div style={{marginTop: '8px'}}>
+                            {tool.audience.map(aud => (
+                                <span key={aud} className="audience">{aud}</span>
+                            ))}
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

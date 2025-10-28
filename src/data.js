@@ -58,7 +58,8 @@ export const tools = [
         "url": "https://chatgpt.com",
         "description": "Your versatile partner for conversation, content creation, and coding.",
         "emoji": "💬",
-        "tutorial": chatgpt
+        "tutorial": chatgpt,
+        "audience": ["Developers", "Business Professionals", "AI Enthusiasts"]
     },
     {
         "tags": "multimodal writing coding conversation google summarization image-analysis",
@@ -66,7 +67,8 @@ export const tools = [
         "url": "https://gemini.google.com",
         "description": "Google's multimodal AI for understanding text, images, code, and video.",
         "emoji": "🤖",
-        "tutorial": gemini
+        "tutorial": gemini,
+        "audience": ["AI Enthusiasts", "Developers", "Creatives"]
     },
     {
         "tags": "real-time social-media writing news",
@@ -74,7 +76,8 @@ export const tools = [
         "url": "https://grok.x.ai",
         "description": "Real-time insights and a bit of wit from the X (formerly Twitter) platform.",
         "emoji": "🧠",
-        "tutorial": grok
+        "tutorial": grok,
+        "audience": ["Business Professionals", "AI Enthusiasts"]
     },
     {
         "tags": "research writing search summarization",
@@ -82,7 +85,8 @@ export const tools = [
         "url": "https://www.perplexity.ai",
         "description": "An AI-powered answer engine that provides sourced, citation-backed results.",
         "emoji": "🔎",
-        "tutorial": perplexityAi
+        "tutorial": perplexityAi,
+        "audience": ["Business Professionals", "AI Enthusiasts"]
     },
     {
         "tags": "research writing notes summarization",
@@ -90,7 +94,8 @@ export const tools = [
         "url": "https://notebooklm.google.com",
         "description": "An expert in your own documents for targeted research and analysis.",
         "emoji": "📚",
-        "tutorial": notebooklm
+        "tutorial": notebooklm,
+        "audience": ["Business Professionals", "AI Enthusiasts"]
     },
     {
         "tags": "presentation design writing",
@@ -98,7 +103,8 @@ export const tools = [
         "url": "https://gamma.app",
         "description": "Create beautiful presentations, documents, and webpages from a simple text prompt.",
         "emoji": "📊",
-        "tutorial": gamma
+        "tutorial": gamma,
+        "audience": ["Business Professionals", "Entrepreneurs", "AI Enthusiasts"]
     },
     {
         "tags": "notes ideas writing",
@@ -106,7 +112,8 @@ export const tools = [
         "url": "https://www.napkin.one",
         "description": "Surfaces surprising connections and insights between your notes and ideas.",
         "emoji": "💡",
-        "tutorial": napkin
+        "tutorial": napkin,
+        "audience": ["Business Professionals", "AI Enthusiasts"]
     },
     {
         "tags": "presentation design",
@@ -114,7 +121,8 @@ export const tools = [
         "url": "https://www.beautiful.ai",
         "description": "An AI presentation designer that makes every slide look polished and professional.",
         "emoji": "🎨",
-        "tutorial": beautifulAi
+        "tutorial": beautifulAi,
+        "audience": ["Business Professionals", "Creatives", "Entrepreneurs"]
     },
     {
         "tags": "research education",
@@ -130,7 +138,8 @@ export const tools = [
         "url": "https://goblin.tools",
         "description": "A set of simple, single-task tools to help break down tasks and manage projects.",
         "emoji": "🧰",
-        "tutorial": goblinTools
+        "tutorial": goblinTools,
+        "audience": ["Business Professionals", "Entrepreneurs"]
     },
     {
         "tags": "design world-building maps",
@@ -138,7 +147,8 @@ export const tools = [
         "url": "https://mapify.so",
         "description": "Generates visual maps from text descriptions for stories, games, and more.",
         "emoji": "🗺️",
-        "tutorial": mapify
+        "tutorial": mapify,
+        "audience": ["Creatives", "AI Enthusiasts"]
     },
     {
         "tags": "design education history",
@@ -146,7 +156,8 @@ export const tools = [
         "url": "http://histography.io",
         "description": "Creates visual timelines and historical infographics automatically from data.",
         "emoji": "🕰️",
-        "tutorial": histographyAi
+        "tutorial": histographyAi,
+        "audience": ["Creatives", "Business Professionals"]
     },
     {
         "tags": "education science",
@@ -154,7 +165,8 @@ export const tools = [
         "url": "https://www.chemequations.com",
         "description": "Instantly balances chemical equations for students and professionals.",
         "emoji": "⚗️",
-        "tutorial": chemequations
+        "tutorial": chemequations,
+        "audience": ["AI Enthusiasts", "Business Professionals"]
     },
     {
         "tags": "education math",
@@ -162,7 +174,8 @@ export const tools = [
         "url": "https://www.gauthmath.com/",
         "description": "An AI-powered math problem solver that provides step-by-step solutions to math problems.",
         "emoji": "🧮",
-        "tutorial": gauth
+        "tutorial": gauth,
+        "audience": ["AI Enthusiasts", "Business Professionals"]
     },
     {
         "tags": "education machine-learning google",
@@ -170,7 +183,8 @@ export const tools = [
         "url": "https://teachablemachine.withgoogle.com/",
         "description": "A web-based tool to create machine learning models without code.",
         "emoji": "🧪",
-        "tutorial": teachableMachine
+        "tutorial": teachableMachine,
+        "audience": ["AI Enthusiasts", "Developers"]
     },
     {
         "tags": "coding development productivity",
@@ -178,7 +192,8 @@ export const tools = [
         "url": "https://github.com/features/copilot",
         "description": "An AI pair programmer that suggests code and entire functions in real-time from your editor.",
         "emoji": "👨‍💻",
-        "tutorial": githubCopilot
+        "tutorial": githubCopilot,
+        "audience": ["Developers", "AI Enthusiasts"]
     },
     {
         "tags": "coding code-editor development",
@@ -186,7 +201,8 @@ export const tools = [
         "url": "https://cursor.sh/",
         "description": "An AI-powered code editor designed for pair-programming with a powerful AI.",
         "emoji": "💻",
-        "tutorial": cursor
+        "tutorial": cursor,
+        "audience": ["Developers"]
     },
     {
         "tags": "coding development",
@@ -194,7 +210,8 @@ export const tools = [
         "url": "https://windsurf.com/",
         "description": "An AI coding assistant designed to help developers write, understand, and fix code more efficiently.",
         "emoji": "⚙️",
-        "tutorial": windsurf
+        "tutorial": windsurf,
+        "audience": ["Developers"]
     },
     {
         "tags": "images design art",
@@ -202,7 +219,8 @@ export const tools = [
         "url": "https://www.midjourney.com",
         "description": "An AI image generator that creates highly artistic and detailed images from text prompts.",
         "emoji": "🖼️",
-        "tutorial": midjourney
+        "tutorial": midjourney,
+        "audience": ["Creatives", "AI Enthusiasts"]
     },
     {
         "tags": "writing conversation research",
@@ -210,7 +228,8 @@ export const tools = [
         "url": "https://claude.ai",
         "description": "A conversational AI focused on helpful, harmless, and honest interactions.",
         "emoji": "🗨️",
-        "tutorial": claude
+        "tutorial": claude,
+        "audience": ["Business Professionals", "AI Enthusiasts"]
     },
     {
         "tags": "music audio creative",
@@ -218,7 +237,8 @@ export const tools = [
         "url": "https://suno.com",
         "description": "An AI music generator that creates original songs, complete with vocals and instruments.",
         "emoji": "🎵",
-        "tutorial": suno
+        "tutorial": suno,
+        "audience": ["Creatives", "AI Enthusiasts"]
     },
     {
         "tags": "video creative design",
@@ -226,7 +246,8 @@ export const tools = [
         "url": "https://runwayml.com",
         "description": "A suite of AI magic tools for video, including text-to-video generation and background removal.",
         "emoji": "🎬",
-        "tutorial": runwayml
+        "tutorial": runwayml,
+        "audience": ["Creatives", "AI Enthusiasts"]
     },
     {
         "tags": "images video design",
@@ -234,7 +255,8 @@ export const tools = [
         "url": "https://www.topazlabs.com/",
         "description": "AI-powered software that enhances photos and videos.",
         "emoji": "🛠️",
-        "tutorial": topazLabs
+        "tutorial": topazLabs,
+        "audience": ["Creatives", "AI Enthusiasts"]
     },
     {
         "tags": "transcription productivity meetings",
@@ -242,7 +264,8 @@ export const tools = [
         "url": "https://otter.ai",
         "description": "An AI meeting assistant that records, transcribes, and summarizes your conversations.",
         "emoji": "📝",
-        "tutorial": otterAi
+        "tutorial": otterAi,
+        "audience": ["Business Professionals", "AI Enthusiasts"]
     },
     {
         "tags": "research search science",
@@ -250,7 +273,8 @@ export const tools = [
         "url": "https://consensus.app",
         "description": "An AI search engine for science that extracts findings directly from published research.",
         "emoji": "🔬",
-        "tutorial": consensus
+        "tutorial": consensus,
+        "audience": ["Business Professionals", "AI Enthusiasts"]
     },
     {
         "tags": "images art openai",
@@ -258,7 +282,8 @@ export const tools = [
         "url": "https://openai.com/dall-e-3",
         "description": "Generate images from text descriptions using OpenAI's powerful model.",
         "emoji": "🖼️",
-        "tutorial": dalle
+        "tutorial": dalle,
+        "audience": ["Creatives", "AI Enthusiasts"]
     },
     {
         "tags": "images art google",
@@ -266,7 +291,8 @@ export const tools = [
         "url": "https://cloud.google.com/vertex-ai/docs/generative-ai/image/overview",
         "description": "Google's text-to-image diffusion model for photorealistic image generation.",
         "emoji": "🖼️",
-        "tutorial": imagen
+        "tutorial": imagen,
+        "audience": ["Creatives", "AI Enthusiasts"]
     },
     {
         "tags": "images art design",
@@ -274,7 +300,8 @@ export const tools = [
         "url": "https://leonardo.ai/",
         "description": "A platform for generating high-quality art and assets for creative projects.",
         "emoji": "🖌️",
-        "tutorial": leonardoAi
+        "tutorial": leonardoAi,
+        "audience": ["Creatives", "AI Enthusiasts"]
     },
     {
         "tags": "game-dev research design",
@@ -282,7 +309,8 @@ export const tools = [
         "url": "https://ludo.ai/",
         "description": "AI-powered platform for game ideation, research, and concept development.",
         "emoji": "🎮",
-        "tutorial": ludoAi
+        "tutorial": ludoAi,
+        "audience": ["Creatives", "Developers"]
     },
     {
         "tags": "images design game-dev",
@@ -290,7 +318,8 @@ export const tools = [
         "url": "https://www.scenario.com/",
         "description": "Generate consistent, high-quality game assets with AI.",
         "emoji": "🎮",
-        "tutorial": scenario
+        "tutorial": scenario,
+        "audience": ["Creatives", "AI Enthusiasts"]
     },
     {
         "tags": "education machine-learning",
@@ -298,7 +327,8 @@ export const tools = [
         "url": "https://myai101.com/",
         "description": "Interactive, bite-sized AI learning lessons",
         "emoji": "🎓",
-        "tutorial": myai101
+        "tutorial": myai101,
+        "audience": ["AI Enthusiasts", "Business Professionals"]
     },
     {
         "tags": "research productivity notes",
@@ -306,7 +336,8 @@ export const tools = [
         "url": "https://getrecall.ai/",
         "description": "Upload notes, PDFs, slides, etc., chat with your content",
         "emoji": "🧠",
-        "tutorial": recall
+        "tutorial": recall,
+        "audience": ["Business Professionals", "AI Enthusiasts"]
     },
     {
         "tags": "education productivity",
@@ -314,7 +345,8 @@ export const tools = [
         "url": "https://apps.ankiweb.net/",
         "description": "Flashcard and spaced repetition platform",
         "emoji": "🧠",
-        "tutorial": anki
+        "tutorial": anki,
+        "audience": ["AI Enthusiasts", "Business Professionals"]
     },
     {
         "tags": "education productivity",
@@ -322,7 +354,8 @@ export const tools = [
         "url": "#",
         "description": "AI-powered study buddy for quizzes/flashcards",
         "emoji": "✏️",
-        "tutorial": flashtutor
+        "tutorial": flashtutor,
+        "audience": ["AI Enthusiasts", "Business Professionals"]
     },
     {
         "tags": "education productivity",
@@ -330,7 +363,8 @@ export const tools = [
         "url": "https://gradiance.ai/",
         "description": "AI grading tool for teachers",
         "emoji": "🧑‍🏫",
-        "tutorial": gradiance
+        "tutorial": gradiance,
+        "audience": ["Business Professionals", "AI Enthusiasts"]
     },
     {
         "tags": "writing productivity",
@@ -338,7 +372,8 @@ export const tools = [
         "url": "https://gptscrambler.com/en",
         "description": "Refines and humanizes AI-generated drafts",
         "emoji": "🔀",
-        "tutorial": gptScrambler
+        "tutorial": gptScrambler,
+        "audience": ["Business Professionals", "AI Enthusiasts"]
     },
     {
         "tags": "productivity",
@@ -346,7 +381,8 @@ export const tools = [
         "url": "https://www.taskratchet.com/",
         "description": "AI-powered project/task manager",
         "emoji": "✅",
-        "tutorial": taskratchet
+        "tutorial": taskratchet,
+        "audience": ["Business Professionals", "Entrepreneurs"]
     },
     {
         "tags": "writing productivity",
@@ -354,7 +390,8 @@ export const tools = [
         "url": "https://quillbot.com/",
         "description": "Advanced paraphrasing and writing tool",
         "emoji": "✍️",
-        "tutorial": quillbot
+        "tutorial": quillbot,
+        "audience": ["Business Professionals", "AI Enthusiasts"]
     },
     {
         "tags": "video design productivity",
@@ -362,7 +399,8 @@ export const tools = [
         "url": "https://www.synthesia.io/",
         "description": "AI-generated explainer videos",
         "emoji": "🎥",
-        "tutorial": synthesia
+        "tutorial": synthesia,
+        "audience": ["Creatives", "Business Professionals"]
     },
     {
         "tags": "education productivity",
@@ -370,7 +408,8 @@ export const tools = [
         "url": "https://www.magicschool.ai/",
         "description": "Instantly generate MCQs, lesson plans, slides",
         "emoji": "🏫",
-        "tutorial": magicschoolai
+        "tutorial": magicschoolai,
+        "audience": ["AI Enthusiasts", "Business Professionals"]
     },
     {
         "tags": "writing productivity",
@@ -378,7 +417,8 @@ export const tools = [
         "url": "https://appsource.microsoft.com/pt-br/product/saas/wa104381774?tab=overview",
         "description": "AI suggestions to improve writing",
         "emoji": "📝",
-        "tutorial": sasWritingReviser
+        "tutorial": sasWritingReviser,
+        "audience": ["Business Professionals", "AI Enthusiasts"]
     },
     {
         "tags": "writing productivity",
@@ -386,7 +426,8 @@ export const tools = [
         "url": "https://www.scribbr.com/",
         "description": "AI-powered proofreading/editing",
         "emoji": "📝",
-        "tutorial": scribbr
+        "tutorial": scribbr,
+        "audience": ["Business Professionals", "AI Enthusiasts"]
     },
     {
         "tags": "education productivity",
@@ -394,7 +435,8 @@ export const tools = [
         "url": "https://www.socrative.com/",
         "description": "Personalized learning/question platform",
         "emoji": "🧑‍🏫",
-        "tutorial": socrative
+        "tutorial": socrative,
+        "audience": ["AI Enthusiasts", "Business Professionals"]
     },
     {
         "tags": "education video",
@@ -402,7 +444,8 @@ export const tools = [
         "url": "https://edpuzzle.com/",
         "description": "Video learning with assessment tools",
         "emoji": "▶️",
-        "tutorial": edpuzzle
+        "tutorial": edpuzzle,
+        "audience": ["Business Professionals", "AI Enthusiasts"]
     },
     {
         "tags": "education productivity",
@@ -410,7 +453,8 @@ export const tools = [
         "url": "https://www.nearpod.com/",
         "description": "Real-time classroom interaction/assessment",
         "emoji": "📡",
-        "tutorial": nearpod
+        "tutorial": nearpod,
+        "audience": ["Business Professionals", "AI Enthusiasts"]
     }
     ,
     {
@@ -419,7 +463,8 @@ export const tools = [
         "url": "https://wisprflow.ai/",
         "description": "Wispr Flow is a voice-to-text AI that provides real-time transcription, meeting integration, and easy export of transcripts and summaries.",
         "emoji": "🎙️",
-        "tutorial": wisprflow
+        "tutorial": wisprflow,
+        "audience": ["Business Professionals", "AI Enthusiasts"]
     },
     {
         "tags": "productivity notes memory",
@@ -427,7 +472,8 @@ export const tools = [
         "url": "https://www.rememberquick.com/",
         "description": "Lightweight AI-powered note and memory tool for quick captures and searchable personal memories.",
         "emoji": "🧠",
-        "tutorial": rememberQuick
+        "tutorial": rememberQuick,
+        "audience": ["Business Professionals", "AI Enthusiasts"]
     },
     {
         "tags": "education quizzes assessment",
@@ -435,7 +481,8 @@ export const tools = [
         "url": "https://quizgecko.com/",
         "description": "AI-assisted quiz builder that generates question sets from source material and supports LMS export.",
         "emoji": "🦎",
-        "tutorial": quizGecko
+        "tutorial": quizGecko,
+        "audience": ["AI Enthusiasts", "Business Professionals"]
     },
     {
         "tags": "education quizzes form builder",
@@ -443,15 +490,17 @@ export const tools = [
         "url": "https://www.jotform.com/ai/quiz-generator/",
         "description": "Jotform's AI tool to convert content into quizzes using the Jotform form builder.",
         "emoji": "🧾",
-        "tutorial": jotformQuizGenerator
+        "tutorial": jotformQuizGenerator,
+        "audience": ["Business Professionals", "AI Enthusiasts"]
     },
     {
         "tags": "education quizzes assessment",
         "name": "QuizzFoundry",
         "url": "https://quizzfoundry.com/",
         "description": "AI-enabled quiz maker focused on quick authoring and exportable assessments.",
-        "emoji": "�",
-        "tutorial": quizzFoundry
+        "emoji": "🧪",
+        "tutorial": quizzFoundry,
+        "audience": ["AI Enthusiasts", "Business Professionals"]
     },
     {
         "tags": "education quizzes assessment",
@@ -459,6 +508,7 @@ export const tools = [
         "url": "https://www.cuiz-ai.com/",
         "description": "AI quiz assistant for creating interactive quizzes and assessments from prompts or content.",
         "emoji": "🧩",
-        "tutorial": cuizAi
+        "tutorial": cuizAi,
+        "audience": ["AI Enthusiasts", "Business Professionals"]
     }
 ]
