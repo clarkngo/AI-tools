@@ -45,6 +45,11 @@ import scribbr from './tutorials/scribbr.js';
 import socrative from './tutorials/socrative.js';
 import edpuzzle from './tutorials/edpuzzle.js';
 import nearpod from './tutorials/nearpod.js';
+import rememberQuick from './tutorials/rememberquick.js';
+import quizGecko from './tutorials/quizgecko.js';
+import jotformQuizGenerator from './tutorials/jotform-quiz-generator.js';
+import quizzFoundry from './tutorials/quizzfoundry.js';
+import cuizAi from './tutorials/cuiz-ai.js';
 
 export const tools = [
     {
@@ -409,12 +414,51 @@ export const tools = [
     }
     ,
     {
-        "tags": "productivity automation workflow",
+        "tags": "transcription audio productivity voice-to-text",
         "name": "Wispr Flow",
         "url": "https://wisprflow.ai/",
         "description": "Wispr Flow is a voice-to-text AI that provides real-time transcription, meeting integration, and easy export of transcripts and summaries.",
-        "tags": "transcription audio productivity voice-to-text",
         "emoji": "🎙️",
         "tutorial": wisprflow
+    },
+    {
+        "tags": "productivity notes memory",
+        "name": "RememberQuick",
+        "url": "https://www.rememberquick.com/",
+        "description": "Lightweight AI-powered note and memory tool for quick captures and searchable personal memories.",
+        "emoji": "🧠",
+        "tutorial": rememberQuick
+    },
+    {
+        "tags": "education quizzes assessment",
+        "name": "QuizGecko",
+        "url": "https://quizgecko.com/",
+        "description": "AI-assisted quiz builder that generates question sets from source material and supports LMS export.",
+        "emoji": "🦎",
+        "tutorial": quizGecko
+    },
+    {
+        "tags": "education quizzes form builder",
+        "name": "Jotform AI Quiz Generator",
+        "url": "https://www.jotform.com/ai/quiz-generator/",
+        "description": "Jotform's AI tool to convert content into quizzes using the Jotform form builder.",
+        "emoji": "🧾",
+        "tutorial": jotformQuizGenerator
+    },
+    {
+        "tags": "education quizzes assessment",
+        "name": "QuizzFoundry",
+        "url": "https://quizzfoundry.com/",
+        "description": "AI-enabled quiz maker focused on quick authoring and exportable assessments.",
+        "emoji": "�",
+        "tutorial": quizzFoundry
+    },
+    {
+        "tags": "education quizzes assessment",
+        "name": "Cuiz AI",
+        "url": "https://www.cuiz-ai.com/",
+        "description": "AI quiz assistant for creating interactive quizzes and assessments from prompts or content.",
+        "emoji": "🧩",
+        "tutorial": cuizAi
     }
 ]
