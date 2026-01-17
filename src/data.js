@@ -13,6 +13,7 @@ import mapify from './tutorials/mapify.js';
 import histographyAi from './tutorials/histography-ai.js';
 import chemequations from './tutorials/chemequations.js';
 import gauth from './tutorials/gauth.js';
+import ideamap from './tutorials/ideamap.js';
 import teachableMachine from './tutorials/teachable-machine.js';
 import githubCopilot from './tutorials/github-copilot.js';
 import cursor from './tutorials/cursor.js';
@@ -114,6 +115,15 @@ export const tools = [
         "emoji": "💡",
         "tutorial": napkin,
         "audience": ["Business Professionals", "AI Enthusiasts"]
+    },
+    {
+        "tags": "brainstorming collaboration productivity visual-thinking",
+        "name": "Ideamap",
+        "url": "https://ideamap.ai",
+        "description": "A visual workspace for brainstorming where teams collaborate on ideas and use AI to boost their creativity.",
+        "emoji": "🧠",
+        "tutorial": ideamap,
+        "audience": ["Business Professionals", "Entrepreneurs", "Creatives"]
     },
     {
         "tags": "presentation design",
