@@ -4,50 +4,50 @@ import ExternalLinkIcon from '../assets/external-link.svg?react';
 const ToolCard = ({ tool, onCardClick }) => {
     const handleExternalLink = (e) => {
         e.stopPropagation();
-    }
+    };
 
-    // determine emoji to show on the card
     const getEmoji = () => {
         if (tool.emoji) return tool.emoji;
         const tags = (tool.tags || '').toLowerCase();
         if (tags.includes('images') || tags.includes('art') || tags.includes('design')) return '🖼️';
         if (tags.includes('coding') || tags.includes('development') || tags.includes('code-editor')) return '💻';
         if (tags.includes('writing') || tags.includes('productivity')) return '✍️';
-        if (tags.includes('video') || tags.includes('audio')) return '🎬';
+        if (tags.includes('video')) return '🎬';
+        if (tags.includes('music') || tags.includes('audio')) return '🎵';
         if (tags.includes('research') || tags.includes('search') || tags.includes('science')) return '🔎';
         if (tags.includes('education')) return '🎓';
-        if (tags.includes('music') || tags.includes('audio')) return '🎵';
         if (tags.includes('transcription') || tags.includes('meetings')) return '📝';
-        if (tags.includes('automation') || tags.includes('workflow')) return '🔁';
-        // fallback: use first letter as emoji-like bubble
+        if (tags.includes('police') || tags.includes('fire') || tags.includes('ems') || tags.includes('dispatch')) return '🚨';
         return '✨';
-    }
+    };
 
     return (
-        <div className="tool-card" data-tags={tool.tags} onClick={() => onCardClick(tool)}>
-            <div className='card-content'>
+        <div className="tool-card" onClick={() => onCardClick(tool)}>
+            <div className="card-content">
                 <div className="tool-header">
-                    <div style={{display: 'flex', alignItems: 'center', gap: '10px'}}>
+                    <div className="tool-header-left">
                         <span className="tool-emoji" aria-hidden="true">{getEmoji()}</span>
                         <h2>{tool.name}</h2>
                     </div>
-                    <a href={tool.url} target="_blank" rel="noopener noreferrer" className="external-link" title="Official Website" onClick={handleExternalLink}>
+                    <a
+                        href={tool.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="external-link"
+                        title="Open tool"
+                        onClick={handleExternalLink}
+                    >
                         <ExternalLinkIcon />
                     </a>
                 </div>
                 <p>{tool.description}</p>
-                <div className="tags-container">
-                    {tool.tags.split(' ').map(tag => (
-                        <span key={tag} className="tag">{tag}</span>
-                    ))}
-                    {tool.audience && (
-                        <div style={{marginTop: '8px'}}>
-                            {tool.audience.map(aud => (
-                                <span key={aud} className="audience">{aud}</span>
-                            ))}
-                        </div>
-                    )}
-                </div>
+                {tool.audience && tool.audience.length > 0 && (
+                    <div className="card-audience">
+                        {tool.audience.slice(0, 3).map(aud => (
+                            <span key={aud} className="card-audience-tag">{aud}</span>
+                        ))}
+                    </div>
+                )}
             </div>
         </div>
     );
