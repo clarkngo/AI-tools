@@ -65,6 +65,7 @@ import axonFusus from './tutorials/axon-fusus.js';
 import soundthinking from './tutorials/soundthinking.js';
 import prepared911 from './tutorials/prepared911.js';
 import codefour from './tutorials/codefour.js';
+import longeye from './tutorials/longeye.js';
 import jasper from './tutorials/jasper.js';
 import copyAi from './tutorials/copy-ai.js';
 import grammarly from './tutorials/grammarly.js';
@@ -684,6 +685,15 @@ export const tools = [
         "description": "CJIS-compliant AI report writing platform that converts police body camera and dash camera footage into structured incident report drafts in under 60 seconds.",
         "emoji": "🚔",
         "tutorial": codefour,
+        "audience": ["First Responders"]
+    },
+    {
+        "tags": "police law-enforcement investigations digital-evidence report-writing analytics",
+        "name": "Longeye",
+        "url": "https://www.longeye.com/",
+        "description": "AI-powered investigative workspace for law enforcement to analyze digital evidence and surface source-linked case insights faster.",
+        "emoji": "🔍",
+        "tutorial": longeye,
         "audience": ["First Responders"]
     },
     {
