@@ -17,6 +17,7 @@ import ideamap from './tutorials/ideamap.js';
 import teachableMachine from './tutorials/teachable-machine.js';
 import githubCopilot from './tutorials/github-copilot.js';
 import cursor from './tutorials/cursor.js';
+import claudeCode from './tutorials/claude-code.js';
 import windsurf from './tutorials/windsurf.js';
 import midjourney from './tutorials/midjourney.js';
 import claude from './tutorials/claude.js';
@@ -253,6 +254,15 @@ export const tools = [
         "emoji": "💻",
         "tutorial": cursor,
         "audience": ["Developers"]
+    },
+    {
+        "tags": "coding development terminal ai-assistant refactoring",
+        "name": "Claude Code",
+        "url": "https://www.anthropic.com/claude-code",
+        "description": "Anthropic's agentic coding assistant for repository understanding, multi-file edits, and terminal-first developer workflows.",
+        "emoji": "🛠️",
+        "tutorial": claudeCode,
+        "audience": ["Developers", "AI Enthusiasts"]
     },
     {
         "tags": "coding development",
