@@ -8,9 +8,29 @@ import Modal from './Modal';
 import logoImage from '/ai-tools.png';
 
 const MainPage = () => {
-    const [searchQuery, setSearchQuery] = useState('');
-    const [selectedCategory, setSelectedCategory] = useState('All');
-    const [selectedAudiences, setSelectedAudiences] = useState([]);
+    const parseFiltersFromUrl = () => {
+        const params = new URLSearchParams(window.location.search);
+        const urlSearch = params.get('search') || '';
+        const urlCategory = params.get('category') || 'All';
+        const urlAudiences = (params.get('audience') || '')
+            .split(',')
+            .map(a => a.trim())
+            .filter(Boolean);
+
+        const validCategory = CATEGORIES.some(c => c.label === urlCategory) ? urlCategory : 'All';
+        const validAudiences = Array.from(new Set(tools.flatMap(t => t.audience || [])));
+
+        return {
+            search: urlSearch,
+            category: validCategory,
+            audiences: urlAudiences.filter(a => validAudiences.includes(a))
+        };
+    };
+
+    const initialFilters = parseFiltersFromUrl();
+    const [searchQuery, setSearchQuery] = useState(initialFilters.search);
+    const [selectedCategory, setSelectedCategory] = useState(initialFilters.category);
+    const [selectedAudiences, setSelectedAudiences] = useState(initialFilters.audiences);
     const [filteredTools, setFilteredTools] = useState(tools);
     const [selectedTool, setSelectedTool] = useState(null);
 
@@ -57,6 +77,17 @@ const MainPage = () => {
         }
 
         setFilteredTools(result);
+    }, [searchQuery, selectedCategory, selectedAudiences]);
+
+    useEffect(() => {
+        const params = new URLSearchParams();
+        if (searchQuery.trim() !== '') params.set('search', searchQuery.trim());
+        if (selectedCategory !== 'All') params.set('category', selectedCategory);
+        if (selectedAudiences.length > 0) params.set('audience', selectedAudiences.join(','));
+
+        const queryString = params.toString();
+        const nextUrl = `${window.location.pathname}${queryString ? `?${queryString}` : ''}`;
+        window.history.replaceState({}, '', nextUrl);
     }, [searchQuery, selectedCategory, selectedAudiences]);
 
     const hasActiveFilters = selectedCategory !== 'All' || selectedAudiences.length > 0 || searchQuery.trim() !== '';
