@@ -1,5 +1,24 @@
 # Changelog
 
+## 2026-08-25
+
+### Added
+
+*   23 new tools with full tutorials, spanning educators, students, research, writing, corporate/enterprise, personal use, and language learning: Quizlet, Photomath, Wolfram Alpha, Speechify, Brisk Teaching, Diffit, Curipod, SchoolAI, Elicit, Scite, ResearchRabbit, SciSpace, Sudowrite, Wordtune, ProWritingAid, Glean, Writer, Gong, Fireflies.ai, Zoom AI Companion, Pi, Motion, and Duolingo Max.
+*   New `Researchers` audience filter, populated by the new research tools (Elicit, Scite, ResearchRabbit, SciSpace, Wolfram Alpha).
+*   Favorites: a star toggle on every tool card, persisted in `localStorage`, plus a "Favorites" quick filter and count in the results row.
+*   Light/dark theme toggle in the header, persisted in `localStorage` and synced with the system preference on first visit; an inline script in `index.html` applies the stored theme before paint to avoid a flash.
+*   "No tools match your filters" empty state with a one-click "Clear filters" action.
+*   Search now also matches a tool's tags, not just its name and description.
+*   "Copy link" button to share the current filtered/search view.
+*   `/` keyboard shortcut focuses the search bar; the search bar also gained a clear ("×") button.
+*   Modal now traps focus while open, auto-focuses its close button, restores focus to the previously focused element on close, and carries `role="dialog"`/`aria-modal` for screen readers.
+
+### Fixed
+
+*   Audience filter bar on mobile was permanently clipped to 80px with no way to see the rest — the "Show More/Less" toggle existed only in an unused `TagBar` component that was never rendered. Rebuilt the expand/collapse directly into `AudienceBar`.
+*   Removed the orphaned, unused `TagBar.jsx` component (no imports, no styles).
+
 ## 2025-10-24
 
 ### Added

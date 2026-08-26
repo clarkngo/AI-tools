@@ -1,9 +1,14 @@
 import React from 'react';
 import ExternalLinkIcon from '../assets/external-link.svg?react';
 
-const ToolCard = ({ tool, onCardClick }) => {
+const ToolCard = ({ tool, onCardClick, isFavorite, onToggleFavorite }) => {
     const handleExternalLink = (e) => {
         e.stopPropagation();
+    };
+
+    const handleFavoriteClick = (e) => {
+        e.stopPropagation();
+        onToggleFavorite(tool.name);
     };
 
     const getEmoji = () => {
@@ -29,16 +34,27 @@ const ToolCard = ({ tool, onCardClick }) => {
                         <span className="tool-emoji" aria-hidden="true">{getEmoji()}</span>
                         <h2>{tool.name}</h2>
                     </div>
-                    <a
-                        href={tool.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="external-link"
-                        title="Open tool"
-                        onClick={handleExternalLink}
-                    >
-                        <ExternalLinkIcon />
-                    </a>
+                    <div className="tool-header-actions">
+                        <button
+                            className={`favorite-btn ${isFavorite ? 'active' : ''}`}
+                            title={isFavorite ? 'Remove from favorites' : 'Add to favorites'}
+                            aria-label={isFavorite ? 'Remove from favorites' : 'Add to favorites'}
+                            aria-pressed={isFavorite}
+                            onClick={handleFavoriteClick}
+                        >
+                            {isFavorite ? '★' : '☆'}
+                        </button>
+                        <a
+                            href={tool.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="external-link"
+                            title="Open tool"
+                            onClick={handleExternalLink}
+                        >
+                            <ExternalLinkIcon />
+                        </a>
+                    </div>
                 </div>
                 <p>{tool.description}</p>
                 {tool.audience && tool.audience.length > 0 && (
