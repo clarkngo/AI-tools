@@ -1,19 +1,39 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const AudienceBar = ({ audiences, selectedAudiences, onToggleAudience, audienceCounts }) => {
+    const [isExpanded, setIsExpanded] = useState(false);
+    const [showToggle, setShowToggle] = useState(false);
+
+    useEffect(() => {
+        const checkScreenSize = () => setShowToggle(window.innerWidth <= 768);
+        checkScreenSize();
+        window.addEventListener('resize', checkScreenSize);
+        return () => window.removeEventListener('resize', checkScreenSize);
+    }, []);
+
     const isSelected = (a) => selectedAudiences && selectedAudiences.includes(a);
 
     return (
-        <div id="audience-container">
-            {audiences.map(aud => (
+        <div>
+            <div id="audience-container" className={isExpanded ? 'expanded' : ''}>
+                {audiences.map(aud => (
+                    <button
+                        key={aud}
+                        className={`audience-btn ${isSelected(aud) ? 'active' : ''}`}
+                        onClick={() => onToggleAudience(aud)}
+                    >
+                        {aud} {audienceCounts && audienceCounts[aud] ? `(${audienceCounts[aud]})` : ''}
+                    </button>
+                ))}
+            </div>
+            {showToggle && (
                 <button
-                    key={aud}
-                    className={`audience-btn ${isSelected(aud) ? 'active' : ''}`}
-                    onClick={() => onToggleAudience(aud)}
+                    className="toggle-audience-btn"
+                    onClick={() => setIsExpanded(!isExpanded)}
                 >
-                    {aud} {audienceCounts && audienceCounts[aud] ? `(${audienceCounts[aud]})` : ''}
+                    {isExpanded ? '▲ Show Less' : '▼ Show More'}
                 </button>
-            ))}
+            )}
         </div>
     );
 };

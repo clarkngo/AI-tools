@@ -92,6 +92,29 @@ import miroAi from './tutorials/miro-ai.js';
 import elevenlabs from './tutorials/elevenlabs.js';
 import soundraw from './tutorials/soundraw.js';
 import udio from './tutorials/udio.js';
+import quizlet from './tutorials/quizlet.js';
+import photomath from './tutorials/photomath.js';
+import wolframAlpha from './tutorials/wolfram-alpha.js';
+import speechify from './tutorials/speechify.js';
+import briskTeaching from './tutorials/brisk-teaching.js';
+import diffit from './tutorials/diffit.js';
+import curipod from './tutorials/curipod.js';
+import schoolai from './tutorials/schoolai.js';
+import elicit from './tutorials/elicit.js';
+import scite from './tutorials/scite.js';
+import researchrabbit from './tutorials/researchrabbit.js';
+import scispace from './tutorials/scispace.js';
+import sudowrite from './tutorials/sudowrite.js';
+import wordtune from './tutorials/wordtune.js';
+import prowritingaid from './tutorials/prowritingaid.js';
+import glean from './tutorials/glean.js';
+import writer from './tutorials/writer.js';
+import gong from './tutorials/gong.js';
+import fireflies from './tutorials/fireflies.js';
+import zoomAiCompanion from './tutorials/zoom-ai-companion.js';
+import pi from './tutorials/pi.js';
+import motion from './tutorials/motion.js';
+import duolingoMax from './tutorials/duolingo-max.js';
 
 export const tools = [
     {
@@ -930,5 +953,212 @@ export const tools = [
         "emoji": "🎶",
         "tutorial": udio,
         "audience": ["Creatives", "AI Enthusiasts"]
+    },
+    {
+        "tags": "quizzes assessment k-12 studying flashcards education",
+        "name": "Quizlet",
+        "url": "https://quizlet.com",
+        "description": "AI-generated flashcards, practice tests, and study guides built from your own notes or textbooks.",
+        "emoji": "🗂️",
+        "tutorial": quizlet,
+        "audience": ["Students", "Teachers"]
+    },
+    {
+        "tags": "math education tutoring k-12",
+        "name": "Photomath",
+        "url": "https://photomath.com",
+        "description": "Scan any math problem with your camera and get a full step-by-step explanation, not just the answer.",
+        "emoji": "🧮",
+        "tutorial": photomath,
+        "audience": ["Students", "Teachers"]
+    },
+    {
+        "tags": "math science research education k-12",
+        "name": "Wolfram Alpha",
+        "url": "https://www.wolframalpha.com",
+        "description": "Computational knowledge engine that solves math, science, and data questions by computing real answers.",
+        "emoji": "📐",
+        "tutorial": wolframAlpha,
+        "audience": ["Students", "Researchers", "Teachers"]
+    },
+    {
+        "tags": "text-to-speech voice audio productivity accessibility",
+        "name": "Speechify",
+        "url": "https://speechify.com",
+        "description": "AI text-to-speech app that reads articles, PDFs, and documents aloud in natural-sounding voices.",
+        "emoji": "🔊",
+        "tutorial": speechify,
+        "audience": ["Students", "AI Enthusiasts", "Business Professionals"]
+    },
+    {
+        "tags": "education lesson-planning grading k-12 assessment teaching",
+        "name": "Brisk Teaching",
+        "url": "https://www.briskteaching.com",
+        "description": "Free Chrome extension that brings AI feedback, lesson creation, and differentiation into Google Docs and Slides.",
+        "emoji": "🧑‍🏫",
+        "tutorial": briskTeaching,
+        "audience": ["Teachers"]
+    },
+    {
+        "tags": "education k-12 reading differentiation assessment",
+        "name": "Diffit",
+        "url": "https://web.diffit.me",
+        "description": "Instantly rewrites any text, topic, or video into leveled reading passages with vocabulary support.",
+        "emoji": "📚",
+        "tutorial": diffit,
+        "audience": ["Teachers"]
+    },
+    {
+        "tags": "education lesson-planning k-12 quizzes assessment",
+        "name": "Curipod",
+        "url": "https://curipod.com",
+        "description": "Generates interactive, standards-aligned lesson slides with live polls and discussion prompts.",
+        "emoji": "🎯",
+        "tutorial": curipod,
+        "audience": ["Teachers"]
+    },
+    {
+        "tags": "education tutoring k-12 lesson-planning",
+        "name": "SchoolAI",
+        "url": "https://schoolai.com",
+        "description": "Build custom AI tutors and classroom activities called Spaces, with live dashboards of student engagement.",
+        "emoji": "🏫",
+        "tutorial": schoolai,
+        "audience": ["Teachers", "Students"]
+    },
+    {
+        "tags": "research summarization science literature-review",
+        "name": "Elicit",
+        "url": "https://elicit.com",
+        "description": "AI research assistant that searches 125M+ papers and builds evidence tables with sentence-level citations.",
+        "emoji": "🔬",
+        "tutorial": elicit,
+        "audience": ["Researchers", "Students", "AI Enthusiasts"]
+    },
+    {
+        "tags": "research citations science literature-review",
+        "name": "Scite",
+        "url": "https://scite.ai",
+        "description": "Shows whether papers citing a study support or contradict it, so you can judge evidence strength fast.",
+        "emoji": "📑",
+        "tutorial": scite,
+        "audience": ["Researchers", "Students"]
+    },
+    {
+        "tags": "research literature-review science visual-thinking",
+        "name": "ResearchRabbit",
+        "url": "https://www.researchrabbit.ai",
+        "description": "Free visual literature-mapping tool that builds citation networks from a starting set of papers.",
+        "emoji": "🐇",
+        "tutorial": researchrabbit,
+        "audience": ["Researchers", "Students"]
+    },
+    {
+        "tags": "research writing summarization science literature-review",
+        "name": "SciSpace",
+        "url": "https://typeset.io",
+        "description": "AI research copilot that explains dense papers in plain language and helps draft cited academic writing.",
+        "emoji": "🧪",
+        "tutorial": scispace,
+        "audience": ["Researchers", "Students"]
+    },
+    {
+        "tags": "writing content-creation fiction storytelling",
+        "name": "Sudowrite",
+        "url": "https://sudowrite.com",
+        "description": "AI writing partner built for fiction—brainstorm plots, develop characters, and beat writer's block.",
+        "emoji": "🖋️",
+        "tutorial": sudowrite,
+        "audience": ["Creatives", "AI Enthusiasts"]
+    },
+    {
+        "tags": "writing editing paraphrasing productivity",
+        "name": "Wordtune",
+        "url": "https://www.wordtune.com",
+        "description": "Rewrites sentences for clarity and tone in real time inside your browser, Google Docs, or Word.",
+        "emoji": "🪄",
+        "tutorial": wordtune,
+        "audience": ["Business Professionals", "Students", "Creatives"]
+    },
+    {
+        "tags": "writing editing grammar proofreading",
+        "name": "ProWritingAid",
+        "url": "https://prowritingaid.com",
+        "description": "In-depth grammar and style checker with 20+ reports on readability, pacing, and repetitive phrasing.",
+        "emoji": "✅",
+        "tutorial": prowritingaid,
+        "audience": ["Creatives", "Students", "Business Professionals"]
+    },
+    {
+        "tags": "search collaboration documents productivity",
+        "name": "Glean",
+        "url": "https://www.glean.com",
+        "description": "Enterprise AI search and assistant that answers questions using your company's own connected apps.",
+        "emoji": "🔍",
+        "tutorial": glean,
+        "audience": ["Business Professionals", "Developers"]
+    },
+    {
+        "tags": "writing brand-voice content-creation automation collaboration",
+        "name": "Writer",
+        "url": "https://writer.com",
+        "description": "Enterprise generative AI platform for building governed AI agents that follow brand and compliance rules.",
+        "emoji": "🏢",
+        "tutorial": writer,
+        "audience": ["Business Professionals", "Entrepreneurs"]
+    },
+    {
+        "tags": "automation collaboration productivity sales analytics",
+        "name": "Gong",
+        "url": "https://www.gong.io",
+        "description": "Revenue intelligence platform that analyzes sales calls to surface coaching and deal-risk insights.",
+        "emoji": "📈",
+        "tutorial": gong,
+        "audience": ["Business Professionals", "Entrepreneurs"]
+    },
+    {
+        "tags": "meetings transcription automation productivity collaboration",
+        "name": "Fireflies.ai",
+        "url": "https://fireflies.ai",
+        "description": "AI meeting assistant that joins calls to record, transcribe, and summarize action items automatically.",
+        "emoji": "🎙️",
+        "tutorial": fireflies,
+        "audience": ["Business Professionals", "Entrepreneurs"]
+    },
+    {
+        "tags": "meetings summarization collaboration productivity video-conferencing",
+        "name": "Zoom AI Companion",
+        "url": "https://www.zoom.com/en/ai-assistant/",
+        "description": "Built-in Zoom assistant that summarizes meetings, drafts follow-up emails, and extracts action items.",
+        "emoji": "🤝",
+        "tutorial": zoomAiCompanion,
+        "audience": ["Business Professionals", "Entrepreneurs"]
+    },
+    {
+        "tags": "conversation companion brainstorming wellbeing personal-assistant",
+        "name": "Pi",
+        "url": "https://pi.ai",
+        "description": "Empathetic personal AI companion for talking through decisions, ideas, and daily reflection.",
+        "emoji": "💭",
+        "tutorial": pi,
+        "audience": ["AI Enthusiasts"]
+    },
+    {
+        "tags": "automation productivity scheduling task-management calendar collaboration",
+        "name": "Motion",
+        "url": "https://www.usemotion.com",
+        "description": "AI calendar and task manager that automatically schedules your to-do list around real meetings.",
+        "emoji": "🗓️",
+        "tutorial": motion,
+        "audience": ["Business Professionals", "Entrepreneurs", "AI Enthusiasts"]
+    },
+    {
+        "tags": "education tutoring k-12 language-learning",
+        "name": "Duolingo Max",
+        "url": "https://www.duolingo.com",
+        "description": "Premium Duolingo tier with AI roleplay conversations and plain-language explanations for wrong answers.",
+        "emoji": "🦉",
+        "tutorial": duolingoMax,
+        "audience": ["Students", "AI Enthusiasts"]
     }
 ]
