@@ -96,6 +96,32 @@ header {
   transform: scale(1.06);
 }
 
+.github-link-btn {
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.15s, transform 0.15s;
+}
+
+.github-link-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.github-link-btn:hover {
+  border-color: var(--accent);
+  transform: scale(1.06);
+}
+
 .logo {
   width: 48px;
   height: 48px;
@@ -669,7 +695,7 @@ h2 {
   .App { padding: 0 1rem 3rem; }
   header { padding: 1.75rem 0 1.5rem; }
   h1 { font-size: 1.6rem; }
-  .theme-toggle-btn { top: 1rem; }
+  .theme-toggle-btn, .github-link-btn { top: 1rem; }
 
   .filter-row { flex-direction: column; align-items: flex-start; }
   .filter-label { min-width: unset; }

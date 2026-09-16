@@ -6,6 +6,9 @@ import AudienceBar from './AudienceBar';
 import SearchBar from './SearchBar';
 import Modal from './Modal';
 import logoImage from '/ai-tools.png';
+import GithubIcon from '../assets/github.svg?react';
+
+const REPO_URL = 'https://github.com/clarkngo/AI-tools';
 
 const FAVORITES_KEY = 'ai-tools-favorites';
 const THEME_KEY = 'ai-tools-theme';
@@ -174,6 +177,16 @@ const MainPage = () => {
     return (
         <div className="App">
             <header>
+                <a
+                    href={REPO_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="github-link-btn"
+                    title="View source on GitHub"
+                    aria-label="View source on GitHub"
+                >
+                    <GithubIcon />
+                </a>
                 <button
                     className="theme-toggle-btn"
                     onClick={toggleTheme}
