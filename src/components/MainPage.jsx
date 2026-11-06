@@ -258,6 +258,12 @@ const MainPage = () => {
                 onToggleFavorite={toggleFavorite}
                 onClearFilters={clearAll}
             />
+            <footer className="site-footer">
+                Built by{' '}
+                <a href="https://github.com/clarkngo" target="_blank" rel="noopener noreferrer">
+                    Clark Ngo
+                </a>
+            </footer>
             <Modal tool={selectedTool} onClose={() => setSelectedTool(null)} />
         </div>
     );
