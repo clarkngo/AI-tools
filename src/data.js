@@ -115,6 +115,13 @@ import zoomAiCompanion from './tutorials/zoom-ai-companion.js';
 import pi from './tutorials/pi.js';
 import motion from './tutorials/motion.js';
 import duolingoMax from './tutorials/duolingo-max.js';
+import talkingpoints from './tutorials/talkingpoints.js';
+import eduaideAi from './tutorials/eduaide-ai.js';
+import mote from './tutorials/mote.js';
+import screencastify from './tutorials/screencastify.js';
+import pearDeck from './tutorials/pear-deck.js';
+import readAlong from './tutorials/read-along.js';
+import kahoot from './tutorials/kahoot.js';
 
 export const tools = [
     {
@@ -124,7 +131,7 @@ export const tools = [
         "description": "Your versatile partner for conversation, content creation, and coding.",
         "emoji": "💬",
         "tutorial": chatgpt,
-        "audience": ["Developers", "Business Professionals", "AI Enthusiasts"]
+        "audience": ["Developers", "Business Professionals", "AI Enthusiasts", "Teachers"]
     },
     {
         "tags": "multimodal writing coding conversation google summarization image-analysis",
@@ -133,7 +140,7 @@ export const tools = [
         "description": "Google's multimodal AI for understanding text, images, code, and video.",
         "emoji": "🤖",
         "tutorial": gemini,
-        "audience": ["AI Enthusiasts", "Developers", "Creatives"]
+        "audience": ["AI Enthusiasts", "Developers", "Creatives", "Teachers"]
     },
     {
         "tags": "real-time social-media writing news",
@@ -312,7 +319,7 @@ export const tools = [
         "description": "A conversational AI focused on helpful, harmless, and honest interactions.",
         "emoji": "🗨️",
         "tutorial": claude,
-        "audience": ["Business Professionals", "AI Enthusiasts"]
+        "audience": ["Business Professionals", "AI Enthusiasts", "Teachers"]
     },
     {
         "tags": "music audio creative",
@@ -528,7 +535,7 @@ export const tools = [
         "description": "Video learning with assessment tools",
         "emoji": "▶️",
         "tutorial": edpuzzle,
-        "audience": ["Business Professionals", "AI Enthusiasts"]
+        "audience": ["Business Professionals", "AI Enthusiasts", "Teachers"]
     },
     {
         "tags": "education productivity",
@@ -898,7 +905,7 @@ export const tools = [
         "description": "Microsoft's AI assistant integrated across Windows and Microsoft 365 for writing, analysis, and productivity.",
         "emoji": "🪟",
         "tutorial": microsoftCopilot,
-        "audience": ["Business Professionals", "Students", "AI Enthusiasts"]
+        "audience": ["Business Professionals", "Students", "AI Enthusiasts", "Teachers"]
     },
     {
         "tags": "education tutoring lesson-planning k-12",
@@ -1160,5 +1167,68 @@ export const tools = [
         "emoji": "🦉",
         "tutorial": duolingoMax,
         "audience": ["Students", "AI Enthusiasts"]
+    },
+    {
+        "tags": "education communication translation family-engagement k-12",
+        "name": "TalkingPoints",
+        "url": "https://talkingpts.org",
+        "description": "Translates two-way texts between teachers and families in 100+ languages to bridge the home-school language gap.",
+        "emoji": "🌍",
+        "tutorial": talkingpoints,
+        "audience": ["Teachers"]
+    },
+    {
+        "tags": "education lesson-planning assessment k-12 quizzes grading teaching",
+        "name": "Eduaide.AI",
+        "url": "https://www.eduaide.ai",
+        "description": "AI teaching assistant with a library of tools for building quizzes, rubrics, lesson plans, and worksheets in seconds.",
+        "emoji": "📓",
+        "tutorial": eduaideAi,
+        "audience": ["Teachers"]
+    },
+    {
+        "tags": "education feedback voice collaboration k-12 grading",
+        "name": "Mote",
+        "url": "https://mote.com",
+        "description": "Chrome extension that adds spoken voice notes to Google Docs, Slides, Forms, and Classroom for faster, more personal feedback.",
+        "emoji": "🗣️",
+        "tutorial": mote,
+        "audience": ["Teachers"]
+    },
+    {
+        "tags": "education video screen-recording collaboration k-12",
+        "name": "Screencastify",
+        "url": "https://www.screencastify.com",
+        "description": "Chrome screen recorder for teachers to capture lessons, tutorials, and narrated feedback as shareable videos.",
+        "emoji": "🖥️",
+        "tutorial": screencastify,
+        "audience": ["Teachers"]
+    },
+    {
+        "tags": "education presentation assessment collaboration k-12 lesson-planning",
+        "name": "Pear Deck",
+        "url": "https://www.peardeck.com",
+        "description": "Google Slides add-on that turns static slides into interactive lessons with live polls, prompts, and real-time student responses.",
+        "emoji": "🍐",
+        "tutorial": pearDeck,
+        "audience": ["Teachers"]
+    },
+    {
+        "tags": "education reading literacy k-12 language-learning",
+        "name": "Read Along",
+        "url": "https://readalong.google.com",
+        "description": "Google's AI reading companion, Diya, listens to kids read aloud and offers real-time support and encouragement.",
+        "emoji": "📗",
+        "tutorial": readAlong,
+        "audience": ["Teachers", "Students"]
+    },
+    {
+        "tags": "education quizzes assessment k-12 collaboration",
+        "name": "Kahoot!",
+        "url": "https://kahoot.com",
+        "description": "Game-based learning platform where students answer live quizzes on their own devices for a fast, competitive review session.",
+        "emoji": "🏆",
+        "tutorial": kahoot,
+        "audience": ["Teachers", "Students"]
     }
 ]

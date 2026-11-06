@@ -145,6 +145,25 @@ h1 {
   font-weight: 400;
 }
 
+.site-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-subtle);
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.site-footer a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.site-footer a:hover {
+  color: var(--accent-hover);
+}
+
 .stats {
   display: none; /* moved into filter bar */
 }
@@ -641,6 +660,7 @@ h2 {
   padding: 0;
   line-height: 1;
   transition: background 0.15s, color 0.15s;
+  flex-shrink: 0;
 }
 
 .close-btn:hover {
@@ -706,11 +726,70 @@ h2 {
   #audience-container.expanded { max-height: none; }
 
   .results-row { flex-direction: column; align-items: flex-start; }
+
+  /* Larger touch targets for icon-only buttons */
+  .favorite-btn {
+    min-width: 40px;
+    min-height: 40px;
+    font-size: 1.35rem;
+    justify-content: center;
+  }
+
+  .external-link {
+    min-width: 40px;
+    min-height: 40px;
+    justify-content: center;
+  }
+
+  .close-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .theme-toggle-btn,
+  .github-link-btn {
+    width: 44px;
+    height: 44px;
+  }
+
+  .category-btn,
+  .audience-btn {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  /* "/" shortcut hint only applies to physical keyboards */
+  .search-kbd { display: none; }
+
+  .modal-backdrop { padding: 0.5rem; align-items: flex-end; }
+
+  .modal-content {
+    max-height: 92vh;
+    padding: 1.25rem;
+    border-radius: 16px 16px 0 0;
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 500px) {
   .tool-grid { grid-template-columns: 1fr; }
   h1 { font-size: 1.4rem; }
+
+  .tool-header-actions { gap: 0.15rem; }
+}
+
+/* Short/landscape viewports — keep the tool grid within reach without scrolling past the whole header first */
+@media (max-height: 500px) and (max-width: 900px) {
+  header { padding: 1rem 0 0.75rem; }
+  .logo { width: 32px; height: 32px; margin-bottom: 0.4rem; }
+  h1 { font-size: 1.3rem; margin-bottom: 0.2rem; }
+  .tagline { display: none; }
+  .theme-toggle-btn, .github-link-btn { top: 0.75rem; width: 34px; height: 34px; }
+
+  #search-container { margin-bottom: 0.75rem; }
+  .filter-section { margin-bottom: 1rem; }
+  .filter-row { margin-bottom: 0.5rem; }
 }
 
 /* scrollbar */
